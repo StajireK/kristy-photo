@@ -1,4 +1,4 @@
-import { Facebook, Images, Instagram } from "lucide-react";
+import { Facebook, Home, Images, Instagram, User } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -17,14 +17,44 @@ export default function Footer() {
           />
         </div>
         <nav className="flex gap-6 text-sm font-medium text-text py-4 items-center">
-          <Link href="/" className="hover:underline">
-            <Images />
+          <Link href="/" className="hover:underline flex flex-col items-center">
+            <Home />
+            Domů
           </Link>
-          <a href="/about" className="hover:underline">
-            <Instagram />
+          <a
+            href="/about"
+            className="hover:underline flex flex-col items-center"
+          >
+            <User />O mně
           </a>
-          <a href="/gallery" className="hover:underline">
+
+          <Link
+            href="/gallery"
+            className="hover:underline flex flex-col items-center"
+          >
+            <Images />
+            Galerie
+          </Link>
+
+          <div className="bg-black ml-2 h-10 w-px" />
+
+          <a
+            href="https://www.instagram.com/kristypitrova.photo/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline flex flex-col items-center"
+          >
+            <Instagram />
+            Instagram
+          </a>
+          <a
+            href="https://www.facebook.com/tynka.jaluvkova"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline flex flex-col items-center"
+          >
             <Facebook />
+            Facebook
           </a>
           <a
             href="/kontakt"

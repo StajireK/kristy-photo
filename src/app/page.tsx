@@ -3,7 +3,7 @@ export default function HomePage() {
     <section
       className="w-full relative flex flex-col justify-center items-center text-center px-4"
       style={{
-        height: "calc(100vh - 65px)",
+        height: "calc(100vh - 76px)",
         backgroundImage: "url('/honzik.jpeg')",
         backgroundPosition: "center",
         backgroundSize: "cover",

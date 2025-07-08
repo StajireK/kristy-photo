@@ -1,6 +1,6 @@
 import "./globals.css";
-import Footer from "./components/Footer";
 import { Nunito } from "next/font/google";
+import Header from "./components/Header";
 
 const nunito = Nunito({
   subsets: ["latin"],
@@ -17,8 +17,11 @@ export default function RootLayout({
       <body
         className={`${nunito.className} bg-bg text-text flex flex-col min-h-screen`}
       >
-        <main>{children}</main>
-        <Footer />
+        <Header />
+
+        <div className="flex-1 flex flex-col">
+          <main className="flex-1">{children}</main>
+        </div>
       </body>
     </html>
   );
