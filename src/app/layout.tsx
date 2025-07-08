@@ -15,10 +15,9 @@ export default function RootLayout({
   return (
     <html lang="cs">
       <body
-        className={`${nunito.className} bg-bg text-text flex flex-col min-h-screen`}
+        className={`${nunito.className} bg-bg text-text min-h-screen h-full`}
       >
         <Header />
-
         <div className="flex-1 flex flex-col">
           <main className="flex-1">{children}</main>
         </div>

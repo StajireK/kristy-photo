@@ -1,17 +1,22 @@
+import Image from "next/image";
+
 export default function HomePage() {
   return (
-    <div className="max-w-5xl mt-28 mx-auto grid md:grid-cols-2 gap-10 items-center">
+    <div className="max-w-5xl min-h-[calc(100vh-85px)] mx-auto grid md:grid-cols-2 gap-10 items-center px-4 py-12">
       {/* Fotka */}
-      <img
+      <Image
         src="/kristy-photo-about-me.png"
         alt="Kristýna Pítrová"
-        className="rounded-2xl shadow-lg object-cover w-full"
+        width={329}
+        height={205}
+        layout="responsive"
+        className="rounded-md"
       />
 
       {/* Text */}
       <div>
         <h2 className="text-3xl font-bold mb-4">O mně</h2>
-        <p className="text-lg leading-relaxed">
+        <p className="text-xl leading-relaxed">
           Jmenuji se Kristýna a focení je pro mě víc než jen práce – je to
           způsob, jak zachytit lásku, emoce a příběhy. Nejraději fotím v
           přírodě, kde se děti i dospělí cítí přirozeně a uvolněně. Sama jsem

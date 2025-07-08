@@ -4,8 +4,8 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="bg-white text-sm text-center text-zinc-50">
-      <div className="max-w-[90%] mx-auto px-4 flex justify-between items-center">
+    <header className="sticky top-0 z-50 bg-white h-[85px] shadow-md">
+      <div className="max-w-[95%] mx-auto px-4 flex justify-between items-center h-full">
         <div>
           <Image
             src="/kristy-photo-logo.png"
@@ -16,7 +16,7 @@ export default function Header() {
             priority
           />
         </div>
-        <nav className="flex gap-6 text-sm font-medium text-text py-4 items-center">
+        <nav className="flex gap-6 text-lg font-bold text-text py-4 items-center">
           <Link href="/" className="hover:underline flex flex-col items-center">
             <Home />
             Domů
@@ -49,8 +49,8 @@ export default function Header() {
             Facebook
           </a>
           <a
-            href="/kontakt"
-            className="px-6 py-3 bg-primary text-white rounded-full shadow hover:bg-primary/90 transition"
+            href="/contact"
+            className=" text-xl px-6 py-3 bg-primary text-white rounded-full shadow hover:bg-primary/90 transition"
           >
             Domluvit focení
           </a>
