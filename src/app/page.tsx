@@ -12,11 +12,10 @@ const images = [
   "/gallery/gallery4.jpeg",
 ];
 
-import { Ms_Madi } from "next/font/google";
+import { Playwrite_SK } from "next/font/google";
 
-const msMadi = Ms_Madi({
+const msMadi = Playwrite_SK({
   weight: "400",
-  subsets: ["latin"],
   display: "swap",
 });
 
@@ -55,11 +54,11 @@ export default function HeroSlider() {
                       Kristýna Pítrová
                     </p>
 
-                    <p className="mt-2 text-xl font-alumni text-white">
+                    <p className="mt-4 text-xl font-alumni text-white">
                       RODINNÁ FOTOGRAFKA
                     </p>
-                    <p className="mt-4 text-base text-white/80 flex items-center gap-2">
-                      Focení srdcem, v uvolněné přátelské atmosféře ♡
+                    <p className=" text-base text-white/80">
+                      Fotím kouzlo okamžiku
                     </p>
                   </div>
                 </div>
@@ -107,8 +106,8 @@ export default function HeroSlider() {
           <div className="bg-white p-6 rounded shadow-md">
             <p className={`${msMadi.className}`}>
               “Vyfotit ty dva pytle blech, to chce odvahu. Ale @kristyna.pitrova
-              se to podařilo na jedničku. ❤️ Už teď vím, že nás nefotíš
-              naposledy. Děkuji za krásně zachycené momenty. ❤️”
+              se to podařilo na jedničku. Už teď vím, že nás nefotíš naposledy.
+              Děkuji za krásně zachycené momenty.”
             </p>
             <span className="text-sm text-gray-500 block mt-2">
               — Kristýna G.
