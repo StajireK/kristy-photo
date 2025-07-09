@@ -25,7 +25,7 @@ export default function Header() {
         {/* Logo */}
         <Link href="/">
           <Image
-            src="/kristy-photo-logo.png"
+            src="/kristy-logo.png"
             alt="Kristy Photo Logo"
             width={66}
             height={66}

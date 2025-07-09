@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-fade";
+import { Heart } from "lucide-react";
 
 const images = [
   "/gallery/gallery1.jpeg",
@@ -49,8 +50,8 @@ export default function HeroSlider() {
                     <p className="mt-2 text-xl italic text-white">
                       rodinná fotografka
                     </p>
-                    <p className="mt-4 text-base text-white/80">
-                      Focení srdcem, v uvolněné přátelské atmosféře 💗
+                    <p className="mt-4 text-base text-white/80 flex items-center gap-2">
+                      Focení srdcem, v uvolněné přátelské atmosféře <Heart />
                     </p>
                   </div>
                 </div>
