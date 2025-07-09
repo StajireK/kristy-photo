@@ -41,6 +41,9 @@ module.exports = {
                 sans: ["var(--font-sans)", ...fontFamily.sans],
 
         'dancing-script': ['Dancing Script', 'cursive'],
+        'glory': ['Give You Glory', 'cursive'],
+        'alumni': ['Alumni Sans Pinstripe', 'sans-serif'],
+        'madi': ['Ms Madi', 'cursive'],
         'nunito': ['Nunito', 'sans-serif'],
         'oooh-baby': ['Oooh Baby', 'cursive'],
       },

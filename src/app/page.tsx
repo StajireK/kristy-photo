@@ -12,6 +12,14 @@ const images = [
   "/gallery/gallery4.jpeg",
 ];
 
+import { Ms_Madi } from "next/font/google";
+
+const msMadi = Ms_Madi({
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+});
+
 export default function HeroSlider() {
   const scrollToNextSection = () => {
     const nextSection = document.querySelector("#gallery");
@@ -43,11 +51,12 @@ export default function HeroSlider() {
               >
                 <div className="h-full w-full bg-black/30 flex items-end justify-center py-24">
                   <div className="z-10 px-4">
-                    <h1 className="text-4xl md:text-5xl font-dancing-script font-bold text-white">
+                    <p className={`${msMadi.className} text-4xl text-white`}>
                       Kristýna Pítrová
-                    </h1>
-                    <p className="mt-2 text-xl italic text-white">
-                      rodinná fotografka
+                    </p>
+
+                    <p className="mt-2 text-xl font-alumni text-white">
+                      RODINNÁ FOTOGRAFKA
                     </p>
                     <p className="mt-4 text-base text-white/80 flex items-center gap-2">
                       Focení srdcem, v uvolněné přátelské atmosféře ♡
@@ -96,7 +105,7 @@ export default function HeroSlider() {
         {/* Review on the right */}
         <div className="md:w-1/2 w-full">
           <div className="bg-white p-6 rounded shadow-md">
-            <p className="font-oooh-baby">
+            <p className={`${msMadi.className}`}>
               “Vyfotit ty dva pytle blech, to chce odvahu. Ale @kristyna.pitrova
               se to podařilo na jedničku. ❤️ Už teď vím, že nás nefotíš
               naposledy. Děkuji za krásně zachycené momenty. ❤️”
