@@ -6,7 +6,6 @@ import {
   Drawer,
   DrawerClose,
   DrawerContent,
-  DrawerDescription,
   DrawerFooter,
   DrawerHeader,
   DrawerTitle,
@@ -85,51 +84,49 @@ export default function Header() {
             <DrawerContent>
               <DrawerHeader>
                 <DrawerTitle></DrawerTitle>
-                <DrawerDescription>
-                  <div className="flex flex-col items-center space-y-4 text-lg font-semibold">
-                    <DrawerClose asChild>
-                      <Link
-                        href="/"
-                        className="hover:underline flex flex-row gap-2 items-center"
-                      >
-                        <Home size={20} />
-                        Domů
-                      </Link>
-                    </DrawerClose>
-                    <DrawerClose asChild>
-                      <Link
-                        href="/about"
-                        className="hover:underline flex flex-row gap-2 items-center"
-                      >
-                        <User size={20} />O mně
-                      </Link>
-                    </DrawerClose>
+                <div className="flex flex-col items-center space-y-4 text-lg font-semibold">
+                  <DrawerClose asChild>
+                    <Link
+                      href="/"
+                      className="hover:underline flex flex-row gap-2 items-center"
+                    >
+                      <Home size={20} />
+                      Domů
+                    </Link>
+                  </DrawerClose>
+                  <DrawerClose asChild>
+                    <Link
+                      href="/about"
+                      className="hover:underline flex flex-row gap-2 items-center"
+                    >
+                      <User size={20} />O mně
+                    </Link>
+                  </DrawerClose>
 
-                    <DrawerClose asChild>
-                      <a
-                        href="https://www.instagram.com/kristypitrova.photo/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:underline flex flex-row gap-2 items-center"
-                      >
-                        <Instagram size={20} />
-                        Instagram
-                      </a>
-                    </DrawerClose>
+                  <DrawerClose asChild>
+                    <a
+                      href="https://www.instagram.com/kristypitrova.photo/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:underline flex flex-row gap-2 items-center"
+                    >
+                      <Instagram size={20} />
+                      Instagram
+                    </a>
+                  </DrawerClose>
 
-                    <DrawerClose asChild>
-                      <a
-                        href="https://www.facebook.com/tynka.jaluvkova"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:underline flex flex-row gap-2 items-center"
-                      >
-                        <Facebook size={20} />
-                        Facebook
-                      </a>
-                    </DrawerClose>
-                  </div>
-                </DrawerDescription>
+                  <DrawerClose asChild>
+                    <a
+                      href="https://www.facebook.com/tynka.jaluvkova"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:underline flex flex-row gap-2 items-center"
+                    >
+                      <Facebook size={20} />
+                      Facebook
+                    </a>
+                  </DrawerClose>
+                </div>
               </DrawerHeader>
               <DrawerFooter>
                 <DrawerClose asChild>
@@ -138,9 +135,9 @@ export default function Header() {
                   </Button>
                 </DrawerClose>
 
-                <DrawerClose>
+                <DrawerClose asChild>
                   <Button className="w-full" variant="outline">
-                    Cancel
+                    Zavřít
                   </Button>
                 </DrawerClose>
               </DrawerFooter>

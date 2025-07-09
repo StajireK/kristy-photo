@@ -8,7 +8,7 @@ module.exports = {
       colors: {
         primary: '#e8a49c',   // lososová (oblečení)
         accent: '#cfc8a0',    // pole / tráva
-        bg: '#dcbdb5',        // přirozené pozadí
+        bg: '#f5f5f5',        // přirozené pozadí
         soft: '#a37b56',      // zemitá hnědá
         text: '#383838',      // tmavý text
         muted: '#fffaf6',     // světlé pozadí
