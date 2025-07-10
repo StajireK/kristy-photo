@@ -13,6 +13,7 @@ const images = [
 ];
 
 import { Playwrite_SK } from "next/font/google";
+import Image from "next/image";
 
 const msMadi = Playwrite_SK({
   weight: "400",
@@ -50,16 +51,26 @@ export default function HeroSlider() {
               >
                 <div className="h-full w-full bg-black/30 flex items-end justify-center py-24">
                   <div className="z-10 px-4">
-                    <p className={`${msMadi.className} text-4xl text-white`}>
-                      Kristýna Pítrová
-                    </p>
+                    <Image
+                      src="/kristy-photo-logo-text.png"
+                      alt="Kristy Photo Logo text"
+                      width={400}
+                      height={400}
+                      className=" w-auto inline-block"
+                      priority
+                    />
 
-                    <p className="mt-4 text-xl font-alumni text-white">
+                    <p className="mt-4 text-2xl font-alumni text-white">
                       RODINNÁ FOTOGRAFKA
                     </p>
-                    <p className=" text-base text-white/80">
-                      Fotím kouzlo okamžiku
-                    </p>
+                    <Image
+                      src="/kristy-photo-logo-subtitle-text.png"
+                      alt="Kristy Photo Logo subtitle"
+                      width={220}
+                      height={220}
+                      className=" w-auto inline-block"
+                      priority
+                    />
                   </div>
                 </div>
               </div>
@@ -89,8 +100,11 @@ export default function HeroSlider() {
       </div>
 
       {/* Galerie & Recenze */}
-      <h2 className="text-3xl font-bold text-center m-6" id="gallery">
-        Galerie
+      <h2
+        className="text-2xl font-bold font-alumni text-center m-6"
+        id="gallery"
+      >
+        GALERIE
       </h2>
       <div className="flex flex-col md:flex-row items-center justify-center bg-muted py-12 w-full mx-auto px-4 rounded shadow-md">
         {/* Image on the left */}

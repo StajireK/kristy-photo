@@ -36,15 +36,18 @@ export default function Header() {
 
         {/* Desktop nav */}
         <nav className="hidden md:flex gap-6 text-lg font-bold text-text items-center">
-          <Link href="/" className="hover:underline flex flex-col items-center">
+          <Link
+            href="/"
+            className="font-alumni text-sm hover:underline flex flex-col items-center"
+          >
             <Home size={20} />
-            Domů
+            DOMŮ
           </Link>
           <Link
             href="/about"
-            className="hover:underline flex flex-col items-center"
+            className="font-alumni text-sm hover:underline flex flex-col items-center"
           >
-            <User size={20} />O mně
+            <User size={20} />O MNĚ
           </Link>
 
           <div className="bg-black ml-2 h-10 w-px" />
@@ -53,25 +56,25 @@ export default function Header() {
             href="https://www.instagram.com/kristypitrova.photo/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:underline flex flex-col items-center"
+            className="font-alumni text-sm hover:underline flex flex-col items-center"
           >
             <Instagram size={20} />
-            Instagram
+            INSTAGRAM
           </a>
           <a
             href="https://www.facebook.com/tynka.jaluvkova"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:underline flex flex-col items-center"
+            className="font-alumni text-sm hover:underline flex flex-col items-center"
           >
             <Facebook size={20} />
-            Facebook
+            FACEBOOK
           </a>
           <Link
             href="/contact"
-            className="text-sm px-6 py-2 bg-primary text-white rounded-full shadow hover:bg-primary/90 transition"
+            className="text-sm ml-6 px-8 py-4 bg-primary text-white rounded-full shadow hover:bg-primary/90 transition"
           >
-            Domluvit focení
+            DOMLUVIT FOCENÍ
           </Link>
         </nav>
 
@@ -88,18 +91,18 @@ export default function Header() {
                   <DrawerClose asChild>
                     <Link
                       href="/"
-                      className="hover:underline flex flex-row gap-2 items-center"
+                      className="font-alumni text-sm hover:underline flex flex-row gap-2 items-center"
                     >
                       <Home size={20} />
-                      Domů
+                      DOMŮ
                     </Link>
                   </DrawerClose>
                   <DrawerClose asChild>
                     <Link
                       href="/about"
-                      className="hover:underline flex flex-row gap-2 items-center"
+                      className="font-alumni text-sm hover:underline flex flex-row gap-2 items-center"
                     >
-                      <User size={20} />O mně
+                      <User size={20} />O MNĚ
                     </Link>
                   </DrawerClose>
 
@@ -108,10 +111,10 @@ export default function Header() {
                       href="https://www.instagram.com/kristypitrova.photo/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="hover:underline flex flex-row gap-2 items-center"
+                      className="font-alumni text-sm hover:underline flex flex-row gap-2 items-center"
                     >
                       <Instagram size={20} />
-                      Instagram
+                      INSTAGRAM
                     </a>
                   </DrawerClose>
 
@@ -120,24 +123,30 @@ export default function Header() {
                       href="https://www.facebook.com/tynka.jaluvkova"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="hover:underline flex flex-row gap-2 items-center"
+                      className="font-alumni text-sm hover:underline flex flex-row gap-2 items-center"
                     >
                       <Facebook size={20} />
-                      Facebook
+                      FACEBOOK
                     </a>
                   </DrawerClose>
                 </div>
               </DrawerHeader>
               <DrawerFooter>
                 <DrawerClose asChild>
-                  <Button onClick={openContact} className="w-full mb-2">
-                    Domluvit focení
+                  <Button
+                    onClick={openContact}
+                    className="w-full font-alumni text-sm mb-2"
+                  >
+                    DOMLUVIT FOCENÍ
                   </Button>
                 </DrawerClose>
 
                 <DrawerClose asChild>
-                  <Button className="w-full" variant="outline">
-                    Zavřít
+                  <Button
+                    className="w-full font-alumni text-sm"
+                    variant="outline"
+                  >
+                    ZAVŘÍT
                   </Button>
                 </DrawerClose>
               </DrawerFooter>
