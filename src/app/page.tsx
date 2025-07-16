@@ -12,13 +12,8 @@ const images = [
   "/gallery/gallery4.jpeg",
 ];
 
-import { Playwrite_SK } from "next/font/google";
 import Image from "next/image";
-
-const msMadi = Playwrite_SK({
-  weight: "400",
-  display: "swap",
-});
+import Link from "next/link";
 
 export default function HeroSlider() {
   const scrollToNextSection = () => {
@@ -29,9 +24,9 @@ export default function HeroSlider() {
       console.error("Next section not found");
     }
   };
+
   return (
     <>
-      {/* Hero sekce */}
       <div className="relative h-[calc(100vh-85px)] text-center overflow-hidden">
         <Swiper
           modules={[Autoplay, EffectFade]}
@@ -46,8 +41,10 @@ export default function HeroSlider() {
           {images.map((img, index) => (
             <SwiperSlide key={index}>
               <div
-                className="h-full w-full bg-cover bg-center"
-                style={{ backgroundImage: `url(${img})` }}
+                className="h-full w-full bg-cover bg-center bg-fixed"
+                style={{
+                  backgroundImage: `url(${img})`,
+                }}
               >
                 <div className="h-full w-full bg-black/30 flex items-end justify-center py-24">
                   <div className="z-10 px-4">
@@ -56,10 +53,9 @@ export default function HeroSlider() {
                       alt="Kristy Photo Logo text"
                       width={400}
                       height={400}
-                      className=" w-auto inline-block"
+                      className="w-auto inline-block"
                       priority
                     />
-
                     <p className="mt-4 text-2xl font-alumni text-white">
                       RODINNÁ FOTOGRAFKA
                     </p>
@@ -68,7 +64,7 @@ export default function HeroSlider() {
                       alt="Kristy Photo Logo subtitle"
                       width={220}
                       height={220}
-                      className=" w-auto inline-block"
+                      className="w-auto inline-block"
                       priority
                     />
                   </div>
@@ -77,7 +73,6 @@ export default function HeroSlider() {
             </SwiperSlide>
           ))}
         </Swiper>
-        {/* Scroll Indicator */}
         <div
           className="absolute bottom-2 left-1/2 -translate-x-1/2 z-20 animate-bounce cursor-pointer"
           onClick={scrollToNextSection}
@@ -99,26 +94,40 @@ export default function HeroSlider() {
         </div>
       </div>
 
-      {/* Galerie & Recenze */}
       <h2
-        className="text-2xl font-bold font-alumni text-center m-6"
+        className="text-2xl font-bold font-alumni text-center m-6 uppercase"
         id="gallery"
       >
-        GALERIE
+        Jmenuji se Kristýna a jsem začínající rodinná fotografka.
       </h2>
-      <div className="flex flex-col md:flex-row items-center justify-center bg-muted py-12 w-full mx-auto px-4 rounded shadow-md">
-        {/* Image on the left */}
-        <div className="md:w-1/3 w-full flex justify-center mb-8 md:mb-0 md:mr-8">
+
+      <div className="max-w-2xl mx-auto my-3 px-6 py-8 bg-white/80 backdrop-blur-sm border-l-4 border-primary/60">
+        <p className="text-lg font-light font-[cursive] text-gray-800 leading-relaxed">
+          Focení mě vždycky bavilo, ale až s rolí mámy jsem pochopila, jak moc
+          mají{" "}
+          <span className="font-semibold text-primary">rodinné fotky.</span>{" "}
+          smysl. Zachytit obyčejný moment, který připomene kouzlo každodennosti
+          – to mě naplňuje ❤️.
+          <br />
+        </p>
+        <p className="mt-4 text-base text-gray-700 leading-relaxed">
+          Chci tvořit snímky, které budou vyprávět Váš příběh a vykouzlí úsměv
+          na rtech i po letech 😊 Nejsem zatím profi fotograf, ale dávám do toho
+          srdce, lidskost i maximum energie! 📸
+          <br />
+        </p>
+        <p className="mt-4 font-semibold text-primary">– Kristy</p>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 px-4">
+        <div className="bg-muted p-4 rounded shadow-lg">
           <img
-            src="/gallery/image.png"
+            src="/gallery/galiovi.jpeg"
             alt="Galerie"
-            className="rounded shadow-sm max-w-full h-auto"
+            className="w-full object-cover rounded shadow-sm mb-4"
           />
-        </div>
-        {/* Review on the right */}
-        <div className="md:w-1/2 w-full">
-          <div className="bg-white p-6 rounded shadow-md">
-            <p className={`${msMadi.className}`}>
+          <div className="bg-white p-4 rounded shadow-lg">
+            <p className={`italic font-[cursive]`}>
               “Vyfotit ty dva pytle blech, to chce odvahu. Ale @kristyna.pitrova
               se to podařilo na jedničku. Už teď vím, že nás nefotíš naposledy.
               Děkuji za krásně zachycené momenty.”
@@ -128,6 +137,52 @@ export default function HeroSlider() {
             </span>
           </div>
         </div>
+
+        <div className="bg-muted p-4 rounded shadow-lg">
+          <img
+            src="/gallery/segetovi.jpeg"
+            alt="Galerie"
+            className="w-full object-cover rounded shadow-sm mb-4"
+          />
+          <div className="bg-white p-4 rounded shadow-lg">
+            <p className={`italic font-[cursive]`}>
+              “Kristýnku doporučuji všemi deseti! Celé focení bylo naprosto
+              přirozené, uvolněné a zároveň profi. K dětem nádherný přístup.
+              Domluva rychlá, místo dokonale vystihla a fotky? Jsou prostě boží.
+              Měla jsem je doma dřív, než jsem stihla vydechnout. Moc děkuji -
+              za vstřícnost a krásný prožitek. Našli jsme naši rodinnou
+              fotografku.”
+            </p>
+            <span className="text-sm text-gray-500 block mt-2">
+              — Veronika S.
+            </span>
+          </div>
+        </div>
+
+        <div className="bg-muted p-4 rounded shadow-lg">
+          <img
+            src="/gallery/hanka.jpeg"
+            alt="Galerie"
+            className="w-full object-cover rounded shadow-sm mb-4"
+          />
+          <div className="bg-white p-4 rounded shadow-lg">
+            <p className={`italic font-[cursive]`}>
+              “Nejšikovnější, Mockrát děkuji nejen za vstřícnou domluvu a
+              vyhovění ohledně času a termínu focení, ale především za zvěčnění
+              těch nejkrásnějších okamžiků prvních krůčků mojí holčičky!”
+            </p>
+            <span className="text-sm text-gray-500 block mt-2">— Hana B.</span>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex items-center justify-center m-6">
+        <Link
+          href="/contact"
+          className="text-sm px-8 py-4 bg-background rounded-full hover:bg-white/30 transition"
+        >
+          DOMLUVIT FOCENÍ
+        </Link>
       </div>
     </>
   );

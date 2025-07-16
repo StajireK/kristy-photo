@@ -12,12 +12,26 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import { Button } from "@/components/ui/button";
+import clsx from "clsx";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
   const openContact = () => {
-    console.log("Opening contact page");
     window.location.href = "/contact";
   };
+  const pathname = usePathname();
+
+  const navLinkClass = (path: string) =>
+    clsx(
+      "font-alumni text-sm hover:underline flex flex-col items-center",
+      pathname === path && "text-soft underline"
+    );
+
+  const navLinkMobileClass = (path: string) =>
+    clsx(
+      "font-alumni text-sm hover:underline flex flex-row gap-2 items-center",
+      pathname === path && "text-soft underline"
+    );
 
   return (
     <header className="sticky top-0 z-50 bg-white shadow-md">
@@ -36,17 +50,11 @@ export default function Header() {
 
         {/* Desktop nav */}
         <nav className="hidden md:flex gap-6 text-lg font-bold text-text items-center">
-          <Link
-            href="/"
-            className="font-alumni text-sm hover:underline flex flex-col items-center"
-          >
+          <Link href="/" className={navLinkClass("/")}>
             <Home size={20} />
             DOMŮ
           </Link>
-          <Link
-            href="/about"
-            className="font-alumni text-sm hover:underline flex flex-col items-center"
-          >
+          <Link href="/about" className={navLinkClass("/about")}>
             <User size={20} />O MNĚ
           </Link>
 
@@ -72,7 +80,12 @@ export default function Header() {
           </a>
           <Link
             href="/contact"
-            className="text-sm ml-6 px-8 py-4 bg-primary text-white rounded-full shadow hover:bg-primary/90 transition"
+            className={clsx(
+              "text-sm ml-6 px-8 py-4 rounded-full shadow transition",
+              pathname === "/contact"
+                ? "bg-primary/80 text-white"
+                : "bg-primary text-white hover:bg-primary/90"
+            )}
           >
             DOMLUVIT FOCENÍ
           </Link>
@@ -89,10 +102,7 @@ export default function Header() {
                 <DrawerTitle></DrawerTitle>
                 <div className="flex flex-col items-center space-y-4 text-lg font-semibold">
                   <DrawerClose asChild>
-                    <Link
-                      href="/"
-                      className="font-alumni text-sm hover:underline flex flex-row gap-2 items-center"
-                    >
+                    <Link href="/" className={navLinkMobileClass("/")}>
                       <Home size={20} />
                       DOMŮ
                     </Link>
@@ -100,7 +110,7 @@ export default function Header() {
                   <DrawerClose asChild>
                     <Link
                       href="/about"
-                      className="font-alumni text-sm hover:underline flex flex-row gap-2 items-center"
+                      className={navLinkMobileClass("/about")}
                     >
                       <User size={20} />O MNĚ
                     </Link>
@@ -135,7 +145,10 @@ export default function Header() {
                 <DrawerClose asChild>
                   <Button
                     onClick={openContact}
-                    className="w-full font-alumni text-sm mb-2"
+                    className={clsx(
+                      "w-full font-alumni text-sm mb-2",
+                      pathname === "/contact" && "bg-primary/80 text-white"
+                    )}
                   >
                     DOMLUVIT FOCENÍ
                   </Button>

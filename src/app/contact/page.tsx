@@ -69,7 +69,24 @@ export default function ContactForm() {
             id="user_email"
             required
             className="w-full px-4 py-3 border bg-white border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-400"
-            placeholder="kristyna@email.cz"
+            placeholder="marketa@email.cz"
+          />
+        </div>
+
+        <div>
+          <label
+            htmlFor="user_phone"
+            className="block mb-1 text-sm font-semibold text-gray-700"
+          >
+            Telefon
+          </label>
+          <input
+            type="user_phone"
+            name="user_phone"
+            id="user_phone"
+            required
+            className="w-full px-4 py-3 border bg-white border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-400"
+            placeholder="+420 777 666 888"
           />
         </div>
 
