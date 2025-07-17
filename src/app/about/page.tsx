@@ -16,7 +16,7 @@ export default function HomePage() {
       {/* Text */}
       <div>
         <h2 className="text-2xl font-bold font-alumni uppercase mb-2">O mně</h2>
-        <p className="text-xl leading-relaxed font-[cursive]">
+        <p className="text-xl font-cursive">
           Jmenuji se Kristýna a focení je pro mě víc než jen práce – je to
           způsob, jak zachytit lásku, emoce a příběhy. Ráda bych o sobě
           prozradila ještě pár důležitých informací, které ke mě patří a jsou

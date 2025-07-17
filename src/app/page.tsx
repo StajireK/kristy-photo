@@ -94,15 +94,8 @@ export default function HeroSlider() {
         </div>
       </div>
 
-      <h2
-        className="text-2xl font-bold font-alumni text-center m-6 uppercase"
-        id="gallery"
-      >
-        Jmenuji se Kristýna a jsem začínající rodinná fotografka.
-      </h2>
-
-      <div className="max-w-2xl mx-auto my-3 px-6 py-8 bg-white/80 backdrop-blur-sm border-l-4 border-primary/60">
-        <p className="text-lg font-light font-[cursive] text-gray-800 leading-relaxed">
+      <div className="max-w-2xl mx-auto my-3 px-6 py-8 bg-white/80 backdrop-blur-sm border-l-4 border-primary/60 text-xl font-light font-cursive text-gray-800 leading-relaxed">
+        <p className="">
           Focení mě vždycky bavilo, ale až s rolí mámy jsem pochopila, jak moc
           mají{" "}
           <span className="font-semibold text-primary">rodinné fotky.</span>{" "}
@@ -110,7 +103,7 @@ export default function HeroSlider() {
           – to mě naplňuje ❤️.
           <br />
         </p>
-        <p className="mt-4 text-base text-gray-700 leading-relaxed">
+        <p className="mt-4">
           Chci tvořit snímky, které budou vyprávět Váš příběh a vykouzlí úsměv
           na rtech i po letech 😊 Nejsem zatím profi fotograf, ale dávám do toho
           srdce, lidskost i maximum energie! 📸
@@ -127,7 +120,7 @@ export default function HeroSlider() {
             className="w-full object-cover rounded shadow-sm mb-4"
           />
           <div className="bg-white p-4 rounded shadow-lg">
-            <p className={`italic font-[cursive]`}>
+            <p className={`italic font-cursive`}>
               “Vyfotit ty dva pytle blech, to chce odvahu. Ale @kristyna.pitrova
               se to podařilo na jedničku. Už teď vím, že nás nefotíš naposledy.
               Děkuji za krásně zachycené momenty.”
@@ -145,7 +138,7 @@ export default function HeroSlider() {
             className="w-full object-cover rounded shadow-sm mb-4"
           />
           <div className="bg-white p-4 rounded shadow-lg">
-            <p className={`italic font-[cursive]`}>
+            <p className={`italic font-cursive`}>
               “Kristýnku doporučuji všemi deseti! Celé focení bylo naprosto
               přirozené, uvolněné a zároveň profi. K dětem nádherný přístup.
               Domluva rychlá, místo dokonale vystihla a fotky? Jsou prostě boží.
@@ -166,7 +159,7 @@ export default function HeroSlider() {
             className="w-full object-cover rounded shadow-sm mb-4"
           />
           <div className="bg-white p-4 rounded shadow-lg">
-            <p className={`italic font-[cursive]`}>
+            <p className={`italic font-cursive`}>
               “Nejšikovnější, Mockrát děkuji nejen za vstřícnou domluvu a
               vyhovění ohledně času a termínu focení, ale především za zvěčnění
               těch nejkrásnějších okamžiků prvních krůčků mojí holčičky!”
