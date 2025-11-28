@@ -119,3 +119,50 @@ a {
   }
 }
 
+/* Pagination pod kartičku, ne přes ni */
+.reviews-swiper .swiper-pagination {
+    position: static;         /* žádný absolute overlay */
+    margin-top: 1rem;         /* mezera pod kartou */
+    text-align: center;
+}
+
+/* Tečky hezčí, ne ta modrá hrůza */
+.reviews-swiper .swiper-pagination-bullet {
+    background: #c5c5c5 !important;
+    opacity: 1 !important;
+    width: 8px;
+    height: 8px;
+}
+
+.reviews-swiper .swiper-pagination-bullet-active {
+    background: #111 !important;   /* klidně dej text-primary */
+    transform: scale(1.2);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #333 !important;        /* barva ikony */
+    width: 30px !important;
+    height: 30px !important;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 18px !important;     /* velikost šipek */
+    font-weight: bold;
+}
+
+/* Hover efekt */
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    color: #111 !important;
+}
+
+@media (max-width: 768px) {
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none !important;
+    }
+}
+
+

@@ -1,5 +1,12 @@
 "use client";
-import { Facebook, Home, Instagram, MenuIcon, User } from "lucide-react";
+import {
+    BadgeQuestionMarkIcon,
+    CameraIcon,
+    Facebook, HandCoinsIcon,
+    Home,
+    Instagram,
+    MenuIcon, NotebookPenIcon,
+} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -17,7 +24,7 @@ import { usePathname } from "next/navigation";
 
 export default function Header() {
   const openContact = () => {
-    window.location.href = "/contact";
+    window.location.href = "/kontakt";
   };
   const pathname = usePathname();
 
@@ -39,10 +46,10 @@ export default function Header() {
         {/* Logo */}
         <Link href="/">
           <Image
-            src="/kristy-logo.png"
+            src="/kristy-logo-no-bg.png"
             alt="Kristy Photo Logo"
-            width={66}
-            height={66}
+            width={120}
+            height={60}
             className="w-auto"
             priority
           />
@@ -54,11 +61,26 @@ export default function Header() {
             <Home size={20} />
             DOMŮ
           </Link>
-          <Link href="/about" className={navLinkClass("/about")}>
-            <User size={20} />O MNĚ
+          <Link href="/cenik" className={navLinkClass("/cenik")}>
+              <HandCoinsIcon size={20} />CENÍK
           </Link>
 
-          <div className="bg-black ml-2 h-10 w-px" />
+            <Link href="/portfolio" className={navLinkClass("/portfolio")}>
+                <CameraIcon size={20} />PORTFOLIO
+            </Link>
+
+
+            <Link href="/otazky" className={navLinkClass("/otazky")}>
+                <BadgeQuestionMarkIcon size={20} />Q&A
+            </Link>
+
+
+            <Link href="/podminky" className={navLinkClass("/podminky")}>
+                <NotebookPenIcon size={20} />OBCHODNÍ PODMÍNKY
+            </Link>
+
+
+            <div className="bg-black ml-2 h-10 w-px" />
 
           <a
             href="https://www.instagram.com/kristypitrova.photo/"
@@ -70,7 +92,7 @@ export default function Header() {
             INSTAGRAM
           </a>
           <a
-            href="https://www.facebook.com/tynka.jaluvkova"
+            href="https://www.facebook.com/profile.php?id=61579282733001"
             target="_blank"
             rel="noopener noreferrer"
             className="font-alumni text-sm hover:underline flex flex-col items-center"
@@ -79,7 +101,7 @@ export default function Header() {
             FACEBOOK
           </a>
           <Link
-            href="/contact"
+            href="/kontakt"
             className={clsx(
               "text-sm ml-6 px-8 py-4 rounded-full shadow transition",
               pathname === "/contact"
@@ -107,16 +129,37 @@ export default function Header() {
                       DOMŮ
                     </Link>
                   </DrawerClose>
-                  <DrawerClose asChild>
-                    <Link
-                      href="/about"
-                      className={navLinkMobileClass("/about")}
-                    >
-                      <User size={20} />O MNĚ
-                    </Link>
-                  </DrawerClose>
+                    <DrawerClose asChild>
+                        <Link href="/cenik" className={navLinkMobileClass("/cenik")}>
+                            <HandCoinsIcon size={20} />
+                            CENÍK
+                        </Link>
+                    </DrawerClose>
 
-                  <DrawerClose asChild>
+                    <DrawerClose asChild>
+                        <Link href="/portfolio" className={navLinkMobileClass("/portfolio")}>
+                            <CameraIcon size={20} />
+                            PORTFOLIO
+                        </Link>
+                    </DrawerClose>
+
+                    <DrawerClose asChild>
+                        <Link href="/otazky" className={navLinkMobileClass("/otazky")}>
+                            <BadgeQuestionMarkIcon size={20} />
+                            Q&A
+                        </Link>
+                    </DrawerClose>
+
+                    <DrawerClose asChild>
+                        <Link href="/podminky" className={navLinkMobileClass("/podminky")}>
+                            <NotebookPenIcon size={20} />
+                            OBCHODNÍ PODMÍNKY
+                        </Link>
+                    </DrawerClose>
+
+                    <div className="bg-black ml-2 h-px w-10" />
+
+                    <DrawerClose asChild>
                     <a
                       href="https://www.instagram.com/kristypitrova.photo/"
                       target="_blank"
@@ -147,7 +190,7 @@ export default function Header() {
                     onClick={openContact}
                     className={clsx(
                       "w-full font-alumni text-sm mb-2",
-                      pathname === "/contact" && "bg-primary/80 text-white"
+                      pathname === "/kontakt" && "bg-primary/80 text-white"
                     )}
                   >
                     DOMLUVIT FOCENÍ
