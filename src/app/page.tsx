@@ -47,28 +47,28 @@ const reviews = [
 const instagramPosts = [
     {
         href: "http://instagram.com/p/DP3C0GjDPPG/?img_index=1",
-        img: "/instagram/insta1.jpg",
+        img: "/insta/insta1.jpg",
         alt: "Rodinné focení u řeky",
         likes: 54,
         comments: 4,
     },
     {
         href: "https://www.instagram.com/p/DQLuoGqDbCA/?img_index=1",
-        img: "/instagram/insta2.jpg",
+        img: "/insta/insta2.jpg",
         alt: "Těhotenské focení v přírodě",
         likes: 23,
         comments: 2,
     },
     {
         href: "https://www.instagram.com/p/DRWhrj3jfD1/?img_index=1",
-        img: "/instagram/insta3.jpg",
+        img: "/instainsta3.jpg",
         alt: "Novorozenecké focení doma",
         likes: 145,
         comments: 1,
     },
     {
         href: "https://www.instagram.com/p/DQlnM8Qjfgy/?img_index=1",
-        img: "/instagram/insta4.jpg",
+        img: "/insta/insta4.jpg",
         alt: "Rodinné focení v lese",
         likes: 69,
         comments: 6,
