@@ -1,93 +1,9 @@
 "use client";
 
-import React from "react";
+import Link from "next/link";
+import clsx from "clsx";
 
 export default function QuestionsPage() {
-    const questions = [
-        {
-            q: "Jak se můžeme objednat?",
-            a: (
-                <>
-                    Můžete mě kontaktovat pomocí kontaktního formuláře, nebo mi napsat email na{" "}
-                    <strong>kristypitrovaphoto@gmail.com</strong>.
-                    Případně mi můžete napsat zprávu na Instagramu nebo Facebooku.
-                </>
-            ),
-        },
-        {
-            q: "Kdy je vhodná doba pro objednání focení?",
-            a: (
-                <>
-                    U rodinného nebo párového focení záleží na sezónnosti a obsazenosti termínů.
-                    Většinou Vás objednám do 14 dnů, ale může se stát, že mám termíny i na několik
-                    měsíců dopředu.
-                    <br /><br />
-                    <strong>Těhotenské focení</strong> je nejlepší kolem 7. měsíce těhotenství.
-                    <br />
-                    <strong>Newborn focení</strong> je ideální ve věku 2–3 týdnů miminka.
-                    <br />
-                    <strong>Fresh48 focení</strong> se koná do 2 dnů od porodu — napište mi prosím
-                    alespoň měsíc dopředu, abych s termínem počítala.
-                </>
-            ),
-        },
-        {
-            q: "Jak focení probíhá?",
-            a: (
-                <>
-                    Snažím se o co nejpřirozenější průběh focení — žádné křečovité pózy.
-                    Pro mě je důležitý upřímný smích, pohoda a pozitivní nálada.
-                    <br /><br />
-                    Chci, abyste si focení užili bez stresu, vklidu a přirozeně.
-                    Při focení s dětmi nikam nespěchám, zapojuji hru a společnou aktivitu,
-                    aby se cítily uvolněně.
-                </>
-            ),
-        },
-        {
-            q: "Kde focení probíhá?",
-            a: (
-                <>
-                    Nejraději fotím v přírodě nebo u Vás doma.
-                    Mám několik oblíbených lokalit, které ráda doporučím, případně fotím na
-                    místě, které si sami vyberete.
-                    <br /><br />
-                    Nejčastěji fotím v okolí Kopřivnice.
-                    Doprava do 20 km je zdarma, nad 20 km účtuji 10 Kč/km.
-                </>
-            ),
-        },
-        {
-            q: "Jaké oblečení na focení zvolit?",
-            a: (
-                <>
-                    Vyberte si oblečení, ve kterém se cítíte pohodlně.
-                    Obecně platí, že <strong>v jednoduchosti je krása</strong>.
-                    <br /><br />
-                    Vyhněte se prosím výrazným barvám a velkým nápisům.
-                    Doporučuji přírodní tóny jako bílá, béžová, hnědá, khaki nebo pastelové barvy.
-                    Vrstvení oblečení dodá fotkám hloubku a zajímavost.
-                    <br /><br />
-                    Brzy přidám i barevnou škálu pro inspiraci.
-                </>
-            ),
-        },
-        {
-            q: "Kdy a jak dostaneme fotografie?",
-            a: (
-                <>
-                    Do týdne po focení Vám pošlu online náhledovou galerii, ze které si sami vyberete
-                    fotografie k úpravě.
-                    <br /><br />
-                    Finální fotografie obdržíte do 4 týdnů (pokud se nedomluvíme jinak).
-                    Fotky posílám v plném rozlišení přes odkaz na online galerii.
-                    <br /><br />
-                    Neupravené fotografie neposkytuji.
-                </>
-            ),
-        },
-    ];
-
     return (
         <div className="bg-gray-100 min-h-screen py-16 px-4">
             <div className="max-w-3xl mx-auto">
@@ -96,22 +12,121 @@ export default function QuestionsPage() {
                 <h1 className="text-center text-4xl font-alumni tracking-[0.15em] mb-2">
                     Často se mě ptáte
                 </h1>
-                <p className="text-center text-gray-700 mb-10 max-w-xl mx-auto">
-                    Zde najdete odpovědi na dotazy, které ode mě často dostáváte.
-                    Pokud nenajdete odpověď na svou otázku, klidně mi napište — ráda pomůžu.
+
+                <p className="text-center text-gray-700 mb-10">
+                    Zde najdete odpovědi na dotazy, které od Vás často dostávám a co Vás nejčastěji
+                    zajímá. Pokud by Vás ale zajímalo i cokoliv jiného a odpověď zde nevidíte, určitě
+                    mi napište. Ráda na vše odpovím.
                 </p>
 
-                {/* Q&A blok */}
-                <div className="space-y-6">
-                    {questions.map((item, index) => (
-                        <div
-                            key={index}
-                            className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition"
+                {/* Q1 */}
+                <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition mb-6">
+                    <h3 className="font-semibold text-lg mb-2 text-primary">
+                        Jak se můžeme objednat?
+                    </h3>
+                    <p className="text-gray-700 leading-relaxed whitespace-pre-line">
+                        Můžete mě kontaktovat pomocí Instagramu nebo Facebooku, nebo mi napište email
+                        na kristypitrovaphoto@gmail.com.
+                    </p>
+                    <p className="mt-4">
+                        Všechny potřebné odkazy najdete v sekci
+                        <Link
+                            href="/kontakt"
+                            className={clsx(
+                                "text-sm font-serif ml-2 px-3 py-2 rounded-full shadow transition",
+                                "bg-[#F1E9D2] hover:bg-[#F1E9D2]/90"
+                            )}
                         >
-                            <h3 className="font-semibold text-lg mb-2 text-primary">{item.q}</h3>
-                            <p className="text-gray-700 leading-relaxed">{item.a}</p>
-                        </div>
-                    ))}
+                            DOMLUVIT FOCENÍ
+                        </Link>
+                    </p>
+                </div>
+
+                {/* Q2 */}
+                <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition mb-6">
+                    <h3 className="font-semibold text-lg mb-2 text-primary">
+                        Kdy je vhodná doba pro objednání focení?
+                    </h3>
+                    <p className="text-gray-700 leading-relaxed whitespace-pre-line">
+                        U rodinného nebo párového focení záleží na sezónnosti a obsazenosti termínů.
+                        Většinou Vás objednám do 14 dnů, ale může se stát, že mám třeba i na několik
+                        měsíců vybookováno. Pokud u mě tedy chcete mít konkrétní termín jistý, pište
+                        klidně 2 měsíce dopředu.
+
+                    </p>
+                    <p className="mt-4">
+                        <strong>Těhotenské focení</strong> je nejlepší fotit kolem  7. měsíce
+                        těhotenství, abyste se cítila pohodlně.
+                    </p>
+                    <p className="mt-4">
+                        <strong>Newborn focení</strong> je vhodné fotit kolem 2
+                        až 3 týdnů miminka.
+                    </p>
+                    <p className="mt-4">
+                        Pokud máte zájem o <strong>focení Fresh48</strong>, kdy se obvykle fotí do 2
+                        dnů od narození miminka, napište mi prosím minimálně měsíc před termínem
+                        porodu, abych s tímto termínem už dopředu mohla počítat.
+                    </p>
+                </div>
+
+                {/* Q3 */}
+                <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition mb-6">
+                    <h3 className="font-semibold text-lg mb-2 text-primary">
+                        Jak focení probíhá?
+                    </h3>
+                    <p className="text-gray-700 leading-relaxed whitespace-pre-line">
+                        Během focení se snažím o co nejpřirozenější průběh. Žádné křečovité pózy ani
+                        povely. Pro mě je důležitý upřímný smích, pohoda a pozitivní nálada. Chci,
+                        abyste si společně se mnou focení opravdu užívali – bez stresu, s radostí a
+                        lehkostí. Mým cílem je, abyste se cítili uvolněně, přirozeně a nebáli se
+                        projevit své city a emoce. Snažím se vnímat každý okamžik a ten pak přenést do
+                        fotografií. Při focení s dětmi se snažím nikam nespěchat. Zapojit do focení
+                        hru, společenou aktivitu, aby to pro ně byla zábava.
+                    </p>
+                </div>
+
+                {/* Q4 */}
+                <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition mb-6">
+                    <h3 className="font-semibold text-lg mb-2 text-primary">
+                        Kde focení probíhá?
+                    </h3>
+                    <p className="text-gray-700 leading-relaxed whitespace-pre-line">
+                        Nejraději fotím venku v přírodě nebo u Vás doma. Několik lokalit venku mám
+                        vytipovaných a jsou mé oblíbené, takže Vám je ráda doporučím. A nebo nechám
+                        výběr na Vás, pokud máte své oblíbené, speciální místo, na které byste mě rádi
+                        vzali. Nejčastěji fotím v okolí Kopřivnice. Doprava do 20 km z Kopřivnice je
+                        zdarma, nad 20 km počítám 10 Kč/km.
+                    </p>
+                </div>
+
+                {/* Q5 */}
+                <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition mb-6">
+                    <h3 className="font-semibold text-lg mb-2 text-primary">
+                        Jaké oblečení na focení zvolit?
+                    </h3>
+                    <p className="text-gray-700 leading-relaxed whitespace-pre-line">
+                        Určitě něco, v čem se cítíte pohodlně. Avšak většinou platí, že v jednoduchosti
+                        je síla a krása. Proto se prosím vyhněte velkým nápisům, vzorům a výrazným
+                        barvám (např.: křiklavě růžová, sytě oranžová nebo neonově zelená nevypadají na
+                        fotografiích lichotivě). Nejčastěji proto doporučuji přírodní a zemité barvy,
+                        jako je bílá, béžová, hnědá, olivově zelená či džínovina. Popřípadě zvolit
+                        barvy pastelové. Vrstvení oblečení dodá také zajímavý efekt na fotkách. Pro
+                        inspiraci přikládám barevnou škálu.
+                    </p>
+                </div>
+
+                {/* Q6 */}
+                <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition mb-6">
+                    <h3 className="font-semibold text-lg mb-2 text-primary">
+                        Kdy a jak dostaneme fotografie?
+                    </h3>
+                    <p className="text-gray-700 leading-relaxed whitespace-pre-line">
+                        Po nafocení fotografií Vám posílám do týdne online náhledovou galerii, ze které
+                        si sami vybíráte fotografie k finální úpravě. Jakmile fotografie vyberete a
+                        zaplatíte, obdržíte finální fotografie v plném rozlišení do 4 týdnů (pokud Vás
+                        předem neinformuji jinak). Hotové fotografie Vám zasílám skrze odkaz na online
+                        galerii. Neupravené fotky neposkytuji.
+                    </p>
                 </div>
 
             </div>

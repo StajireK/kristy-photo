@@ -7,15 +7,15 @@ export default function HomePage() {
                         Ceník focení
                     </h1>
                     <p className="text-center text-gray-600 max-w-2xl mx-auto mb-10 text-sm md:text-base">
-                        Ceny jsou uvedeny za focení v okolí Veřovic. Všechny balíčky obsahují
+                        Ceny jsou uvedeny za focení v okolí Kopřivnice. Všechny balíčky obsahují
                         pečlivě upravené fotografie v online galerii, ze které si své snímky
                         pohodlně vyberete.
                     </p>
 
                     {/* 3 balíčky */}
-                    <div className="grid gap-8 md:grid-cols-3">
+                    <div className="grid gap-8 md:grid-cols-2">
                         {/* MINI */}
-                        <div className="bg-white rounded-2xl shadow-md p-6 flex flex-col">
+{/*                        <div className="bg-white rounded-2xl shadow-md p-6 flex flex-col">
                             <h2 className="text-lg font-alumni uppercase tracking-[0.15em] mb-2">
                                 MINI balíček
                             </h2>
@@ -44,7 +44,7 @@ export default function HomePage() {
                                 Tento balíček je skvělý pro ty, kteří si chtějí focení nejprve
                                 vyzkoušet nebo mají obavu z ceny.
                             </div>
-                        </div>
+                        </div>*/}
 
                         {/* STANDARD – zvýrazněný */}
                         <div className="bg-white rounded-2xl shadow-lg p-6 border border-primary/30 relative flex flex-col">
@@ -64,22 +64,20 @@ export default function HomePage() {
 
                             <p className="text-sm text-gray-700 mb-4">
                                 Nejčastější volba pro rodinné focení, páry nebo těhotenské
-                                focení. Dostatek času na uvolněnou atmosféru i různé záběry.
+                                focení.
                             </p>
 
                             <div className="mt-2">
                                 <h3 className="text-sm font-semibold mb-1">V ceně:</h3>
                                 <ul className="text-sm text-gray-700 space-y-1 list-disc list-inside">
-                                    <li>vedení při focení a pomoc s pózováním</li>
-                                    <li>výběr z online galerie</li>
-                                    <li>pečlivá retuš a barevná úprava</li>
+                                    <li>výběr fotek z online galerie</li>
+                                    <li>k dispozici klientký šatník (zapůjčení oblečení a doplňků pro děti i dospělé)</li>
                                     <li>možnost přikoupit fotografie navíc</li>
                                 </ul>
                             </div>
 
                             <div className="mt-4 text-xs text-gray-500 italic">
-                                Ideální poměr ceny a výsledku – skvělá volba pro rodiny v okolí
-                                menšího města.
+
                             </div>
                         </div>
 
@@ -96,24 +94,19 @@ export default function HomePage() {
                             </p>
 
                             <p className="text-sm text-gray-700 mb-4">
-                                Pro větší rodiny, lifestyle focení, páry, těhulky nebo
-                                portrétní série, kdy chcete více záběrů i zážitku.
+                                Pro větší rodiny, newborn focení, focení výjímečných událostí, kdy chcete více záběrů.
                             </p>
 
                             <div className="mt-2">
                                 <h3 className="text-sm font-semibold mb-1">V ceně:</h3>
                                 <ul className="text-sm text-gray-700 space-y-1 list-disc list-inside">
                                     <li>možnost fotit na více místech v okolí</li>
-                                    <li>mini styling – doporučení oblečení</li>
-                                    <li>pečlivá retuš a barevná editace</li>
-                                    <li>online galerie ke stažení</li>
-                                    <li>přednostní dodání fotografií</li>
+                                    <li>k dispozici klientký šatník (zapůjčení oblečení a doplňků pro děti i dospělé)</li>
+                                    <li>výběr fotek z online galerie</li>
                                 </ul>
                             </div>
 
                             <div className="mt-4 text-xs text-gray-500 italic">
-                                Vyberou si ho hlavně ti, kteří chtějí z focení udělat malý
-                                zážitek pro sebe i svou rodinu.
                             </div>
                         </div>
                     </div>
@@ -127,28 +120,12 @@ export default function HomePage() {
                         <ul className="text-sm text-gray-700 space-y-2">
                             <li className="flex flex-wrap justify-between gap-2">
                                 <span>Extra fotografie nad rámec balíčku</span>
-                                <span className="font-semibold text-primary">150 Kč / ks</span>
+                                <span className="font-semibold text-primary">100 Kč / ks</span>
                             </li>
                             <li className="flex flex-wrap justify-between gap-2">
-                                <span>Expresní dodání hotových fotografií do 3 dnů</span>
-                                <span className="font-semibold text-primary">+ 500 Kč</span>
-                            </li>
-                            <li className="flex flex-wrap justify-between gap-2">
-                                <span>Každých 10 km mimo výchozí lokalitu</span>
+                                <span>Doprava do 20 km z Kopřivnice je zdarma, nad 20 km počítám</span>
                                 <span className="font-semibold text-primary">
-                  + 8 Kč / km
-                </span>
-                            </li>
-                            <li className="flex flex-wrap justify-between gap-2">
-                                <span>Další osoba nad 5 lidí (např. rozšířená rodina)</span>
-                                <span className="font-semibold text-primary">
-                  + 150 Kč / osoba
-                </span>
-                            </li>
-                            <li className="flex flex-wrap justify-between gap-2">
-                                <span>Více lokací (přesun v rámci focení)</span>
-                                <span className="font-semibold text-primary">
-                  + 200 Kč
+                  + 10 Kč / km
                 </span>
                             </li>
                         </ul>

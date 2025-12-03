@@ -15,12 +15,12 @@ export default function TermsPage() {
                 </p>
 
                 {/* Info blok */}
-                <div className="bg-white p-6 rounded-xl shadow-sm mb-10">
+   {/*             <div className="bg-white p-6 rounded-xl shadow-sm mb-10">
                     <p><strong>Kristýna Pítrová</strong></p>
                     <p>IČO: ??</p>
                     <p>Sídlo: Mniší 143</p>
                     <p>Nejsem plátce DPH</p>
-                </div>
+                </div>*/}
 
                 {/* Podmínky */}
                 <div className="space-y-8">
@@ -37,7 +37,7 @@ export default function TermsPage() {
                     <div className="bg-white p-6 rounded-xl shadow-sm">
                         <h2 className="font-semibold text-lg mb-2">2. Rezervační poplatek</h2>
                         <p className="text-gray-700 leading-relaxed">
-                            U focení je vyžadován rezervační poplatek sloužící k rezervaci termínu.
+                            U focení je vyžadován rezervační poplatek ve výši 50% z dané částky. Rezervační poplatek slouží k závazné rezervaci termínu.
                             Poplatek se nevrací v případě zrušení objednávky klientem a slouží k pokrytí škod způsobených jeho nepřítomností.
                         </p>
                     </div>
@@ -80,7 +80,7 @@ export default function TermsPage() {
                             Další fotografie nad rámec balíčku jsou zpoplatněny dle ceníku.
                             <br /><br />
                             Fotograf nenese odpovědnost za spolupráci fotografovaných osob či zvířat, pokud to ovlivní počet kvalitních záběrů.
-                            Neupravené soubory jsou uchovány max. 3 měsíce.
+                            Neupravené soubory jsou uchovány max. 2 měsíce.
                         </p>
                     </div>
 
@@ -88,7 +88,7 @@ export default function TermsPage() {
                         <h2 className="font-semibold text-lg mb-2">7. Úprava fotografií</h2>
                         <p className="text-gray-700 leading-relaxed">
                             Odevzdané fotografie jsou upraveny dle stylu fotografa (barvy, expozice, ořez, drobné retuše).
-                            Fotograf neprovádí rozsáhlé retuše jako změny postavy, odstraňování předmětů, či výrazné úpravy vzhledu.
+                            Fotograf neprovádí rozsáhlé retuše jako změny postavy, rozháhlé odstraňování předmětů, či výrazné úpravy vzhledu.
                             <br /><br />
                             Fotograf odevzdává pouze upravené JPG fotografie. Neupravené RAW neposkytuje.
                         </p>
@@ -116,7 +116,7 @@ export default function TermsPage() {
                     <div className="bg-white p-6 rounded-xl shadow-sm">
                         <h2 className="font-semibold text-lg mb-2">10. Předání zakázky</h2>
                         <p className="text-gray-700 leading-relaxed">
-                            Fotografie bez tištěných produktů jsou předávány elektronicky, formou odkazu ke stažení z galerie.
+                            Fotografie jsou předávány elektronicky, formou odkazu ke stažení z online galerie.
                             Klient je povinen fotografie uložit a zálohovat.
                             <br /><br />
                             Náhledy k výběru – do 1 týdne od focení.

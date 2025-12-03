@@ -46,29 +46,29 @@ const reviews = [
 
 const instagramPosts = [
     {
-        href: "https://www.instagram.com/p/DPLXaT3iGWu/?img_index=1",
-        img: "/gallery/gallery1.jpg",
+        href: "http://instagram.com/p/DP3C0GjDPPG/?img_index=1",
+        img: "/instagram/insta1.jpg",
         alt: "Rodinné focení u řeky",
         likes: 54,
         comments: 4,
     },
     {
-        href: "https://www.instagram.com/p/DPLXaT3iGWu/?img_index=1",
-        img: "/gallery/gallery2.jpg",
+        href: "https://www.instagram.com/p/DQLuoGqDbCA/?img_index=1",
+        img: "/instagram/insta2.jpg",
         alt: "Těhotenské focení v přírodě",
         likes: 23,
         comments: 2,
     },
     {
-        href: "https://www.instagram.com/p/DPLXaT3iGWu/?img_index=1",
-        img: "/gallery/gallery3.jpg",
+        href: "https://www.instagram.com/p/DRWhrj3jfD1/?img_index=1",
+        img: "/instagram/insta3.jpg",
         alt: "Novorozenecké focení doma",
         likes: 145,
         comments: 1,
     },
     {
-        href: "https://www.instagram.com/p/DPLXaT3iGWu/?img_index=1",
-        img: "/gallery/gallery4.jpg",
+        href: "https://www.instagram.com/p/DQlnM8Qjfgy/?img_index=1",
+        img: "/instagram/insta4.jpg",
         alt: "Rodinné focení v lese",
         likes: 69,
         comments: 6,
@@ -150,7 +150,7 @@ export default function HeroSlider() {
         <section id="about-me">
 
         <div className="flex flex-col items-center justify-center m-12 md:flex-row">
-            <div className="max-w-2xl mx-auto my-6 px-6 py-8 md:px-20 font-serif backdrop-blur-sm text-sm md:text-xl bg-white rounded-xl shadow-md p-6 text-gray-800">
+            <div className="max-w-2xl mx-auto my-6 px-6 py-8 md:px-20 backdrop-blur-sm text-sm md:text-xl bg-white rounded-xl shadow-md p-6 text-gray-800">
                 <p className="">
                     Ahoj, jmenuji se Kristýna, Kristy.
                 </p>
@@ -223,7 +223,7 @@ export default function HeroSlider() {
                                 fill
                                 className="object-cover"
                                 sizes="100vw"
-                                quality={100}
+                                quality={80}
                                 unoptimized={true}
                             />
 
