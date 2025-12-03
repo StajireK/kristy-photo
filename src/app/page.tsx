@@ -61,7 +61,7 @@ const instagramPosts = [
     },
     {
         href: "https://www.instagram.com/p/DRWhrj3jfD1/?img_index=1",
-        img: "/instainsta3.jpg",
+        img: "/insta/insta3.jpg",
         alt: "Novorozenecké focení doma",
         likes: 145,
         comments: 1,
