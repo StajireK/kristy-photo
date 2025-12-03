@@ -4,22 +4,22 @@ import { useState } from "react";
 import Image from "next/image";
 
 const images = [
-    "/portfolio/portfolio1.jpg",
-    "/portfolio/portfolio2.jpg",
-    "/portfolio/portfolio3.jpg",
-    "/portfolio/portfolio4.jpg",
-    "/portfolio/portfolio5.jpg",
-    "/portfolio/portfolio16.jpg",
-    "/portfolio/portfolio6.jpg",
-    "/portfolio/portfolio7.jpg",
-    "/portfolio/portfolio8.jpg",
-    "/portfolio/portfolio10.jpg",
-    "/portfolio/portfolio9.jpg",
-    "/portfolio/portfolio11.jpg",
-    "/portfolio/portfolio12.jpg",
-    "/portfolio/portfolio13.jpg",
-    "/portfolio/portfolio14.jpg",
-    "/portfolio/portfolio15.jpg",
+    "/port/portfolio1.jpg",
+    "/port/portfolio2.jpg",
+    "/port/portfolio3.jpg",
+    "/port/portfolio4.jpg",
+    "/port/portfolio5.jpg",
+    "/port/portfolio16.jpg",
+    "/port/portfolio6.jpg",
+    "/port/portfolio7.jpg",
+    "/port/portfolio8.jpg",
+    "/port/portfolio10.jpg",
+    "/port/portfolio9.jpg",
+    "/port/portfolio11.jpg",
+    "/port/portfolio12.jpg",
+    "/port/portfolio13.jpg",
+    "/port/portfolio14.jpg",
+    "/port/portfolio15.jpg",
 ];
 
 export default function PortfolioPage() {
