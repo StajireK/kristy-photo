@@ -9,6 +9,7 @@ import heroImg from "../../public/gallery/gallery3.jpg";
 import Image from "next/image";
 import Link from "next/link";
 import {CopyIcon, HeartIcon, MessageCircleIcon} from "lucide-react";
+import clsx from "clsx";
 
 
 const images = [
@@ -355,12 +356,12 @@ export default function HeroSlider() {
 
 
       <div className="flex items-center justify-center m-6">
-        <Link
-          href="/kontakt"
-          className="text-sm px-8 py-4 bg-background rounded-full hover:bg-white/30 transition"
-        >
-          DOMLUVIT FOCENÍ
-        </Link>
+          <Link
+              href="/kontakt"
+              className="text-lg font-serif ml-6 px-6 py-2 rounded-full shadow transition bg-white hover:bg-white/70"
+          >
+              DOMLUVIT FOCENÍ
+          </Link>
       </div>
     </>
   );

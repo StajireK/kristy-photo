@@ -118,7 +118,8 @@ export default function QuestionsPage() {
                         <Image
                             src="/barevna-skala.jpg"
                             alt="Me"
-                            className="rounded shadow-sm mb-4 h-auto w-full md:w-3/4"
+                            width={600}
+                            height={600}
                         />
                     </div>
                 </div>
