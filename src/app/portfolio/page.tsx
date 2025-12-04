@@ -53,7 +53,7 @@ export default function PortfolioPage() {
                                     alt={`Portfolio fotografie ${i + 1}`}
                                     width={1600}
                                     height={1067}
-                                    className="w-full h-auto object-cover align-middle"
+                                    className="w-full h-auto object-cover align-middle transition-transform duration-300 group-hover:scale-105"
                                     quality={80}
                                     sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
                                 />
@@ -69,25 +69,25 @@ export default function PortfolioPage() {
                     className="fixed inset-0 z-[60] bg-black/80 flex items-center justify-center px-4"
                     onClick={closePreview}
                 >
-                    <div
-                        className="relative max-w-5xl w-full max-h-[90vh]"
-                        onClick={(e) => e.stopPropagation()} // ať klik uvnitř nezavírá
-                    >
+                    <div className="relative max-w-5xl w-full max-h-[90vh]">
                         {/* Zavírací křížek */}
                         <button
                             type="button"
-                            onClick={closePreview}
-                            className="absolute -top-10 right-0 text-white text-sm uppercase tracking-[0.2em] hover:text-gray-200"
+                            onClick={(e) => {
+                                e.stopPropagation();
+                                closePreview();
+                            }}
+                            className="absolute -top-0 right-0 text-white text-sm uppercase tracking-[0.2em] hover:text-gray-200"
                         >
                             ZAVŘÍT ✕
                         </button>
 
-                        <div className="relative w-full h-[60vh] md:h-[70vh]">
+                        <div className="relative w-full h-[80vh] md:h-[90vh]">
                             <Image
                                 src={images[selectedIndex]}
                                 alt={`Portfolio fotografie ${selectedIndex + 1}`}
                                 fill
-                                className="object-contain"
+                                className="object-contain pointer-events-none"
                                 quality={100}
                             />
                         </div>

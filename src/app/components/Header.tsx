@@ -1,13 +1,8 @@
 "use client";
 import {
-    BadgeQuestionMarkIcon,
-    CameraIcon,
     Facebook,
-    HandCoinsIcon,
-    Home,
     Instagram,
     MenuIcon,
-    NotebookPenIcon,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -62,9 +57,9 @@ export default function Header() {
                     <Link href="/" className={navLinkClass("/")}>
                         DOMŮ
                     </Link>
-                    <Link href="/cenik" className={navLinkClass("/cenik")}>
+{/*                    <Link href="/cenik" className={navLinkClass("/cenik")}>
                         CENÍK
-                    </Link>
+                    </Link>*/}
 
                     <Link href="/portfolio" className={navLinkClass("/portfolio")}>
                         PORTFOLIO
@@ -101,10 +96,10 @@ export default function Header() {
                     <Link
                         href="/kontakt"
                         className={clsx(
-                            "text-lg font-serif ml-6 px-8 py-4 rounded-full shadow transition",
-                            pathname === "/contact"
-                                ? "bg-[#F1E9D2]/80 "
-                                : "bg-[#F1E9D2] hover:bg-[#F1E9D2]/90"
+                            "text-lg font-serif ml-6 px-6 py-2 rounded-full shadow transition",
+                            pathname === "/kontakt"
+                                ? "bg-[#F1E9D2]/60 "
+                                : "bg-[#F1E9D2] hover:bg-[#F1E9D2]/70"
                         )}
                     >
                         DOMLUVIT FOCENÍ
@@ -144,14 +139,14 @@ export default function Header() {
                                         </Link>
                                     </DrawerClose>
 
-                                    <DrawerClose asChild>
+{/*                                    <DrawerClose asChild>
                                         <Link
                                             href="/cenik"
                                             className={navLinkMobileClass("/cenik")}
                                         >
                                             CENÍK
                                         </Link>
-                                    </DrawerClose>
+                                    </DrawerClose>*/}
 
                                     <DrawerClose asChild>
                                         <Link

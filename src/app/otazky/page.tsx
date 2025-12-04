@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import clsx from "clsx";
+import Image from "next/image";
 
 export default function QuestionsPage() {
     return (
@@ -28,18 +29,18 @@ export default function QuestionsPage() {
                         Můžete mě kontaktovat pomocí Instagramu nebo Facebooku, nebo mi napište email
                         na kristypitrovaphoto@gmail.com.
                     </p>
-                    <p className="mt-4">
-                        Všechny potřebné odkazy najdete v sekci
+                    <div className="mt-4 flex flex-col gap-2 md:flex-row md:items-center md:flex-wrap">
+                        <p>Všechny potřebné odkazy najdete v sekci</p>
                         <Link
                             href="/kontakt"
                             className={clsx(
-                                "text-sm font-serif ml-2 px-3 py-2 rounded-full shadow transition",
+                                "w-fit inline-block text-sm font-serif px-4 py-2 rounded-full shadow transition",
                                 "bg-[#F1E9D2] hover:bg-[#F1E9D2]/90"
                             )}
                         >
                             DOMLUVIT FOCENÍ
                         </Link>
-                    </p>
+                    </div>
                 </div>
 
                 {/* Q2 */}
@@ -113,6 +114,13 @@ export default function QuestionsPage() {
                         barvy pastelové. Vrstvení oblečení dodá také zajímavý efekt na fotkách. Pro
                         inspiraci přikládám barevnou škálu.
                     </p>
+                    <div className="flex justify-center my-4">
+                        <Image
+                            src="/barevna-skala.jpg"
+                            alt="Me"
+                            className="rounded shadow-sm mb-4 h-auto w-full md:w-3/4"
+                        />
+                    </div>
                 </div>
 
                 {/* Q6 */}

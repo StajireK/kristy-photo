@@ -5,6 +5,11 @@ import {Autoplay, Navigation, Pagination} from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import heroImg from "../../public/gallery/gallery3.jpg";
+import Image from "next/image";
+import Link from "next/link";
+import {CopyIcon, HeartIcon, MessageCircleIcon} from "lucide-react";
+
 
 const images = [
     "/gallery/gallery1.jpg",
@@ -49,36 +54,32 @@ const instagramPosts = [
         href: "http://instagram.com/p/DP3C0GjDPPG/?img_index=1",
         img: "/insta/insta1.jpg",
         alt: "Rodinné focení u řeky",
-        likes: 54,
-        comments: 4,
+        likes: 15,
+        comments: 1,
     },
     {
         href: "https://www.instagram.com/p/DQLuoGqDbCA/?img_index=1",
         img: "/insta/insta2.jpg",
         alt: "Těhotenské focení v přírodě",
-        likes: 23,
-        comments: 2,
+        likes: 118,
+        comments: 13,
     },
     {
         href: "https://www.instagram.com/p/DRWhrj3jfD1/?img_index=1",
         img: "/insta/insta3.jpg",
         alt: "Novorozenecké focení doma",
-        likes: 145,
-        comments: 1,
+        likes: 79,
+        comments: 8,
     },
     {
         href: "https://www.instagram.com/p/DQlnM8Qjfgy/?img_index=1",
         img: "/insta/insta4.jpg",
         alt: "Rodinné focení v lese",
-        likes: 69,
-        comments: 6,
+        likes: 20,
+        comments: 1,
     },
 ];
 
-
-import Image from "next/image";
-import Link from "next/link";
-import {CopyIcon, HeartIcon, MessageCircleIcon} from "lucide-react";
 
 export default function HeroSlider() {
   const scrollToNextSection = () => {
@@ -94,37 +95,42 @@ export default function HeroSlider() {
     <>
         {/* Staticka Fotka */}
         <div className="relative h-[calc(100vh-85px)] text-center overflow-hidden">
-            <div
-                className="h-full w-full bg-cover bg-center md:bg-[center_calc(50%+170px)]"
-                style={{
-                    backgroundImage: `url(/gallery/gallery3.jpg)`,
-                }}
-            >
-                <div className="h-full w-full bg-black/30 flex items-end justify-center py-24">
-                    <div className="z-10 px-4">
-                        <Image
-                            src="/kristy-photo-logo-text.png"
-                            alt="Kristy Photo Logo text"
-                            width={800}
-                            height={800}
-                            className="w-auto inline-block"
-                            priority
-                        />
-                        <p className="mt-4 text-4xl font-alumni text-white">
-                            RODINNÁ FOTOGRAFKA
-                        </p>
-                        <Image
-                            src="/kristy-photo-logo-subtitle-text.png"
-                            alt="Kristy Photo Logo subtitle"
-                            width={400}
-                            height={400}
-                            className="w-auto inline-block"
-                            priority
-                        />
-                    </div>
+            {/* hero fotka */}
+            <Image
+                src={heroImg}
+                alt="Rodinné focení – úvodní fotografie"
+                fill
+                priority
+                placeholder="blur"
+                className="object-cover md:object-[center_calc(50%+170px)]"
+            />
+
+            {/* tmavý overlay + text */}
+            <div className="absolute inset-0 bg-black/30 flex items-end justify-center py-24">
+                <div className="z-10 px-4">
+                    <Image
+                        src="/kristy-photo-logo-text.png"
+                        alt="Kristy Photo Logo text"
+                        width={800}
+                        height={800}
+                        className="w-auto inline-block"
+                        priority
+                    />
+                    <p className="mt-4 text-4xl font-alumni text-white">
+                        RODINNÁ FOTOGRAFKA
+                    </p>
+                    <Image
+                        src="/kristy-photo-logo-subtitle-text.png"
+                        alt="Kristy Photo Logo subtitle"
+                        width={400}
+                        height={400}
+                        className="w-auto inline-block"
+                        priority
+                    />
                 </div>
             </div>
 
+            {/* šipka dolů */}
             <div
                 className="absolute bottom-2 left-1/2 -translate-x-1/2 z-20 animate-bounce cursor-pointer"
                 onClick={scrollToNextSection}
@@ -144,52 +150,55 @@ export default function HeroSlider() {
                     />
                 </svg>
             </div>
-
         </div>
 
-        <section id="about-me">
+        <section id="about-me" className="bg-gray-100">
+            <div className="max-w-6xl mx-auto px-4 py-12">
+                <div className="flex flex-col md:flex-row items-center gap-12">
+                    {/* Textová karta */}
+                    <div className="flex-[2] w-full mx-auto px-6 py-8 md:px-10 backdrop-blur-sm text-sm md:text-xl bg-white rounded-xl shadow-md text-gray-800">
+                        <p>
+                            Ahoj, jmenuji se Kristýna, Kristy.
+                        </p>
 
-        <div className="flex flex-col items-center justify-center m-12 md:flex-row">
-            <div className="max-w-2xl mx-auto my-6 px-6 py-8 md:px-20 backdrop-blur-sm text-sm md:text-xl bg-white rounded-xl shadow-md p-6 text-gray-800">
-                <p className="">
-                    Ahoj, jmenuji se Kristýna, Kristy.
-                </p>
-                    <p className="mt-4">
+                        <p className="mt-4">
+                            Focení mě provází už od dětství, ale až s rolí mámy jsem naplno pochopila, jak
+                            velkou hodnotu mají rodinné fotky. Zachytit obyčejný moment, který připomene
+                            kouzlo každodennosti – to je něco, co mě opravdu naplňuje.
+                        </p>
 
-                    Focení mě provází už od dětství, ale až s rolí mámy jsem naplno pochopila, jak
-                    velkou hodnotu mají{" "}
-                    rodinné fotky. Zachytit
-                    obyčejný moment, který připomene kouzlo každodennosti – to je něco, co mě
-                    opravdu naplňuje.
-                </p>
+                        <p className="mt-4">
+                            Chci tvořit fotografie, které budou vyprávět Váš příběh a přinesou radost i po
+                            letech. Zatím se nepovažuji za profesionální fotografku, jelikož fotím teprve pár
+                            měsíců. Co Vám ale můžu s jistotou slíbit a nabídnout? Do každého focení dávám
+                            maximum energie, lidskost a hlavně fotím srdcem.
+                        </p>
 
-                <p className="mt-4">
-                    Chci tvořit fotografie, které budou vyprávět Váš příběh a přinesou radost i po
-                    letech. Zatím se nepovažuji za profesionální fotografku, jelikož fotím teprve pár měsíců. Co Vám ale můžu s jistotou slíbit a nabídnout? Do každého focení dávám
-                    maximum energie, lidskost a hlavně fotím srdcem.
-                </p>
+                        <p className="mt-4">
+                            Kdo tedy jsem? Máma, porodní bába a žena s kreativní duší. Miluji dobrou kávu,
+                            skvělé jídlo, poznávání nových míst a ze všeho nejvíc miluju focení.
+                        </p>
 
-                <p className="mt-4">
-                    Kdo tedy jsem? Máma, porodní bába a žena s kreativní duší. Miluji dobrou kávu, skvělé jídlo,
-                    poznávání nových míst a ze všeho nejvíc miluju focení.
-                </p>
-                <p className="mt-4">
+                        <p className="mt-4">
+                            Těším se na focení s Vámi a jsem moc vděčná za každého, kdo si ke mě najde cestu.
+                        </p>
 
-                Těším se na focení s Vámi a jsem moc vděčná za každého, kdo si ke mě najde cestu.
-                </p>
-                <p className="mt-4 font-semibold text-primary text-end">Kristy</p>
+                        <p className="mt-4 font-semibold text-primary text-end">Kristy</p>
+                    </div>
 
+                    {/* Fotka */}
+                    <div className="flex-[3] w-full">
+                        <Image
+                            src="/kristy-me.jpg"
+                            alt="Me"
+                            width={1200}
+                            height={1600}
+                            className="w-full h-auto object-cover rounded shadow-sm"
+                        />
+                    </div>
+                </div>
             </div>
-            <div className="w-3/4 md:w-1/4 md:mr-20">
-                <img
-                    src="/kristy-me.jpg"
-                    alt="Me"
-                    className="w-full object-cover rounded shadow-sm mb-4"
-                />
-            </div>
-        </div>
         </section>
-
 
         {/* Hero galerie */}
         <div className="relative overflow-hidden bg-gray-200 py-16">
@@ -249,9 +258,10 @@ export default function HeroSlider() {
                     className="w-full reviews-swiper"
                     grabCursor={true}
                     autoHeight={true}
+                    spaceBetween={24}
                 >
                     {reviews.map((review, i) => (
-                        <SwiperSlide key={i} className="flex justify-center">
+                        <SwiperSlide key={i} className="flex justify-center px-4">
                             <div className="bg-white rounded-xl shadow-md p-6 text-center max-w-md mx-auto">
                                 <p className="text-gray-700 text-base leading-relaxed">{review.text}</p>
                                 {review.author && (
