@@ -54,7 +54,7 @@ export default function PortfolioPage() {
                                     width={1600}
                                     height={1067}
                                     className="w-full h-auto object-cover align-middle transition-transform duration-300 group-hover:scale-105"
-                                    quality={80}
+                                    quality={70}
                                     sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
                                 />
                             </div>
@@ -88,7 +88,7 @@ export default function PortfolioPage() {
                                 alt={`Portfolio fotografie ${selectedIndex + 1}`}
                                 fill
                                 className="object-contain pointer-events-none"
-                                quality={100}
+                                quality={80}
                             />
                         </div>
                     </div>
