@@ -154,10 +154,10 @@ export default function HeroSlider() {
         </div>
 
         <section id="about-me" className="bg-gray-100">
-            <div className="max-w-6xl mx-auto px-4 py-12">
+            <div className="max-w-6xl mx-auto px-4 py-32">
                 <div className="flex flex-col md:flex-row items-center gap-12">
                     {/* Textová karta */}
-                    <div className="flex-[2] w-full mx-auto px-6 py-8 md:px-10 backdrop-blur-sm text-sm md:text-xl bg-white rounded-xl shadow-md text-gray-800">
+                    <div className="flex-[5] w-full mx-auto px-6 py-8 md:px-10 backdrop-blur-sm text-sm md:text-xl bg-white rounded-xl shadow-md text-gray-800">
                         <p>
                             Ahoj, jmenuji se Kristýna, Kristy.
                         </p>
