@@ -57,9 +57,9 @@ export default function Header() {
                     <Link href="/" className={navLinkClass("/")}>
                         DOMŮ
                     </Link>
-{/*                    <Link href="/cenik" className={navLinkClass("/cenik")}>
+                    <Link href="/cenik" className={navLinkClass("/cenik")}>
                         CENÍK
-                    </Link>*/}
+                    </Link>
 
                     <Link href="/portfolio" className={navLinkClass("/portfolio")}>
                         PORTFOLIO
@@ -139,14 +139,14 @@ export default function Header() {
                                         </Link>
                                     </DrawerClose>
 
-{/*                                    <DrawerClose asChild>
+                                    <DrawerClose asChild>
                                         <Link
                                             href="/cenik"
                                             className={navLinkMobileClass("/cenik")}
                                         >
                                             CENÍK
                                         </Link>
-                                    </DrawerClose>*/}
+                                    </DrawerClose>
 
                                     <DrawerClose asChild>
                                         <Link

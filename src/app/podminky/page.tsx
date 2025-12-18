@@ -37,7 +37,7 @@ export default function TermsPage() {
                     <div className="bg-white p-6 rounded-xl shadow-sm">
                         <h2 className="font-semibold text-lg mb-2">2. Rezervační poplatek</h2>
                         <p className="text-gray-700 leading-relaxed">
-                            U focení je vyžadován rezervační poplatek ve výši 50% z dané částky. Rezervační poplatek slouží k závazné rezervaci termínu.
+                            U focení je vyžadován rezervační poplatek ve výši 1 000 Kč. Rezervační poplatek slouží k závazné rezervaci termínu.
                             Poplatek se nevrací v případě zrušení objednávky klientem a slouží k pokrytí škod způsobených jeho nepřítomností.
                         </p>
                     </div>
@@ -129,7 +129,7 @@ export default function TermsPage() {
                     <div className="bg-white p-6 rounded-xl shadow-sm">
                         <h2 className="font-semibold text-lg mb-2">11. Archivace fotografií</h2>
                         <p className="text-gray-700 leading-relaxed">
-                            Fotograf archivuje fotografie max. 3 měsíce od jejich pořízení.
+                            Fotograf archivuje výsledné fotografie max. 3 měsíce od jejich pořízení.
                         </p>
                     </div>
 

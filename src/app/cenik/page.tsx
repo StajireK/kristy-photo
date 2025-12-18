@@ -3,14 +3,9 @@ export default function HomePage() {
         <>
             <section className="bg-gray-100 py-16">
                 <div className="max-w-5xl mx-auto px-4">
-                    <h1 className="text-3xl md:text-4xl font-alumni tracking-[0.2em] text-center mb-4">
+                    <h1 className="text-3xl md:text-4xl font-alumni tracking-[0.2em] text-center mb-8">
                         Ceník focení
                     </h1>
-                    <p className="text-center text-gray-600 max-w-2xl mx-auto mb-10 text-sm md:text-base">
-                        Ceny jsou uvedeny za focení v okolí Kopřivnice. Všechny balíčky obsahují
-                        pečlivě upravené fotografie v online galerii, ze které si své snímky
-                        pohodlně vyberete.
-                    </p>
 
                     {/* 3 balíčky */}
                     <div className="grid gap-8 md:grid-cols-2">
@@ -48,31 +43,22 @@ export default function HomePage() {
 
                         {/* STANDARD – zvýrazněný */}
                         <div className="bg-white rounded-2xl shadow-lg p-6 border border-primary/30 relative flex flex-col">
-                            <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-white text-[10px] font-semibold px-3 py-1 rounded-full tracking-wide">
-                                Nejoblíbenější
-                            </div>
 
-                            <h2 className="mt-2 text-lg font-alumni uppercase tracking-[0.15em] mb-2">
-                                STANDARD balíček
+                            <h2 className="mt-2 text-xl font-alumni uppercase tracking-[0.15em] mb-2 text-center">
+                                BALÍČEK PRO RODINY, PÁRY, TĚHOTENSKÉ FOCENÍ
                             </h2>
-                            <p className="text-2xl font-semibold text-primary mb-1">
-                                2 500 Kč
-                            </p>
-                            <p className="text-xs uppercase text-gray-500 mb-4">
-                                cca 60 minut · 12 upravených fotografií
+                            <p className="text-2xl font-semibold text-primary mb-1 text-center">
+                                2 200 Kč
                             </p>
 
-                            <p className="text-sm text-gray-700 mb-4">
-                                Nejčastější volba pro rodinné focení, páry nebo těhotenské
-                                focení.
-                            </p>
-
-                            <div className="mt-2">
-                                <h3 className="text-sm font-semibold mb-1">V ceně:</h3>
-                                <ul className="text-sm text-gray-700 space-y-1 list-disc list-inside">
-                                    <li>výběr fotek z online galerie</li>
-                                    <li>k dispozici klientký šatník (zapůjčení oblečení a doplňků pro děti i dospělé)</li>
-                                    <li>možnost přikoupit fotografie navíc</li>
+                            <div className="mt-8">
+                                <h3 className="text-md font-semibold mb-1">V ceně:</h3>
+                                <ul className="text-md text-gray-700 space-y-1 list-disc list-inside">
+                                    <li>10 fotografií v plné kvalitě zaslané elektronicky</li>
+                                    <li>výběr fotografií z náhledů</li>
+                                    <li>doba focení 40 - 60 minut</li>
+                                    <li>základní retuš (akné, modřiny, škrábance)</li>
+                                    <li>klientský šatník k zapůjčení</li>
                                 </ul>
                             </div>
 
@@ -83,26 +69,21 @@ export default function HomePage() {
 
                         {/* PREMIUM */}
                         <div className="bg-white rounded-2xl shadow-md p-6 flex flex-col">
-                            <h2 className="text-lg font-alumni uppercase tracking-[0.15em] mb-2">
-                                PREMIUM balíček
+                            <h2 className="text-xl font-alumni uppercase tracking-[0.15em] mb-2 text-center">
+                                NEWBORN A FRESH48 BALÍČEK
                             </h2>
-                            <p className="text-2xl font-semibold text-primary mb-1">
-                                3 200 Kč
+                            <p className="text-2xl font-semibold text-primary mb-8 text-center">
+                                2 800 Kč
                             </p>
-                            <p className="text-xs uppercase text-gray-500 mb-4">
-                                90 minut · 20 upravených fotografií
-                            </p>
-
-                            <p className="text-sm text-gray-700 mb-4">
-                                Pro větší rodiny, newborn focení, focení výjímečných událostí, kdy chcete více záběrů.
-                            </p>
-
-                            <div className="mt-2">
-                                <h3 className="text-sm font-semibold mb-1">V ceně:</h3>
-                                <ul className="text-sm text-gray-700 space-y-1 list-disc list-inside">
-                                    <li>možnost fotit na více místech v okolí</li>
-                                    <li>k dispozici klientký šatník (zapůjčení oblečení a doplňků pro děti i dospělé)</li>
-                                    <li>výběr fotek z online galerie</li>
+                            <div className="mt-8">
+                                <h3 className="text-md font-semibold mb-1">V ceně:</h3>
+                                <ul className="text-md text-gray-700 space-y-1 list-disc list-inside">
+                                    <li>20 fotografií v plné kvalitě zaslané elektronicky</li>
+                                    <p  className="text-md text-gray-500 mb-4">(vhodné snímky převádím i do černobílé verze)</p>
+                                    <li>výběr fotografií z náhledů</li>
+                                    <li>doba focení 60 - 90 minut</li>
+                                    <li>základní retuš (novorozenecké akné, škrábance)</li>
+                                    <li>dětské oblečky k zapůjení</li>
                                 </ul>
                             </div>
 
