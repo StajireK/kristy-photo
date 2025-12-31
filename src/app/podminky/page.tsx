@@ -37,8 +37,28 @@ export default function TermsPage() {
                     <div className="bg-white p-6 rounded-xl shadow-sm">
                         <h2 className="font-semibold text-lg mb-2">2. Rezervační poplatek</h2>
                         <p className="text-gray-700 leading-relaxed">
-                            U focení je vyžadován rezervační poplatek ve výši 1 000 Kč. Rezervační poplatek slouží k závazné rezervaci termínu.
-                            Poplatek se nevrací v případě zrušení objednávky klientem a slouží k pokrytí škod způsobených jeho nepřítomností.
+                            U focení je vyžadován rezervační poplatek ve výši 1 000 Kč, který slouží k závazné rezervaci termínu.
+                            Rezervační poplatek je odečten z celkové ceny focení.
+                        </p>
+                        <p className="text-gray-700 leading-relaxed whitespace-pre-line mt-4">
+                            <strong>Rezervace MATERNITY balíčku</strong> je platná po uhrazení zálohy 2 000 Kč. Záloha je odečtena z celkové ceny balíčku. Slouží k závazné rezervaci termínu těhotenského focení a orientační rezervaci termínu newborn / fresh48 focení.
+                        </p>
+                        <p className="mt-4">
+                            <strong>Termín newborn / Fresh48 focení </strong>Termín focení se stanovuje orientačně dle termínu porodu a po narození miminka se upřesňuje podle aktuální situace.
+
+                        </p>
+                        <p className="mt-4">
+                            <strong>Změna nebo zrušení focení </strong>Pokud se newborn nebo fresh48 focení nemůže uskutečnit z vážných důvodů, záloha se nevrací v hotovosti, ale je možné ji využít na jiné focení dle aktuální nabídky.
+                            V případě zrušení focení z jiných než vážných důvodů záloha propadá.
+                        </p>
+                        <p className="mt-4">
+                            <strong>Objednání balíčku </strong>MATERNITY balíček je možné objednat pouze při rezervaci těhotenského focení.
+                        </p>
+                        <p className="mt-4">
+                            <strong>Doplňující informace </strong>Balíček zahrnuje uvedený počet upravených fotografií. Další fotografie je možné dokoupit dle aktuálního ceníku.
+                        </p>
+                        <p className="mt-4">
+                            V případě zrušení focení ze strany klienta se rezervační poplatek nevrací, jelikož slouží k pokrytí času vyhrazeného pro daný termín.
                         </p>
                     </div>
 
@@ -136,7 +156,7 @@ export default function TermsPage() {
                 </div>
 
                 <p className="text-center text-sm text-gray-500 mt-12">
-                    Tyto obchodní podmínky jsou platné od 28. 11. 2025
+                    Tyto obchodní podmínky jsou platné od 1. 1. 2026
                 </p>
 
             </div>
