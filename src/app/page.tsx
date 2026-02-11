@@ -9,7 +9,6 @@ import heroImg from "../../public/gallery/gallery3.jpg";
 import Image from "next/image";
 import Link from "next/link";
 import {CopyIcon, HeartIcon, MessageCircleIcon} from "lucide-react";
-import clsx from "clsx";
 
 
 const images = [
@@ -170,8 +169,7 @@ export default function HeroSlider() {
 
                         <p className="mt-4">
                             Chci tvořit fotografie, které budou vyprávět Váš příběh a přinesou radost i po
-                            letech. Zatím se nepovažuji za profesionální fotografku, jelikož fotím teprve pár
-                            měsíců. Co Vám ale můžu s jistotou slíbit a nabídnout? Do každého focení dávám
+                            letech. Co Vám můžu s jistotou slíbit a nabídnout? Do každého focení dávám
                             maximum energie, lidskost a hlavně fotím srdcem.
                         </p>
 
