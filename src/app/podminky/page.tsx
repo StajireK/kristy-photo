@@ -10,7 +10,7 @@ export default function TermsPage() {
                         <h1 className="!mb-0 absolute z-10 bottom-0 left-1/2 -translate-x-1/2 tracking-[0.15em] font-alumni uppercase text-2xl whitespace-nowrap">
                             Obchodní podmínky
                         </h1>
-                        <p className="handwrite-xl relative z-0 whitespace-nowrap text-8xl md:text-9xl">
+                        <p className="handwrite-xl relative z-0 whitespace-nowrap text-6xl md:text-9xl">
                             Podmínky
                         </p>
                     </header>

@@ -71,7 +71,7 @@ export default function PortfolioSection({ title, handwrite, description, images
                             <h1 className="!mb-0 absolute z-10 bottom-0 left-1/2 -translate-x-1/2 tracking-[0.15em] font-alumni uppercase text-2xl whitespace-nowrap">
                                 {title}
                             </h1>
-                            <p className="handwrite-xl relative z-0 whitespace-nowrap text-7xl md:text-8xl">
+                            <p className="handwrite-xl relative z-0 whitespace-nowrap text-7xl md:text-6xl">
                                 {handwrite}
                             </p>
                         </header>
