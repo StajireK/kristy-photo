@@ -7,7 +7,7 @@ export default function NewbornPage() {
     return (
         <PortfolioSection
             title="FRESH 48 & NEWBORN"
-            handwrite="Zrození"
+            handwrite="Zrození žívota"
             description={`Jednou budou tyto fotografie patřit mezi vzpomínky.
 Díky nim se alespoň na chvíli zastaví čas.
 Budou krásným a dojemným připomenutím toho,

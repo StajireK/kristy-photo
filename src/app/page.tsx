@@ -252,7 +252,7 @@ export default function HeroSlider() {
                         <h2 className="!mb-0 absolute z-10 bottom-0 left-1/2 -translate-x-1/2 tracking-[0.15em] font-alumni uppercase text-2xl whitespace-nowrap">
                             Recenze
                         </h2>
-                        <p className="handwrite-xl relative z-0 text-6xl md:text-9xl">
+                        <p className="handwrite-xl whitespace-nowrap relative z-0 text-6xl md:text-9xl">
                             Říkají o mně
                         </p>
                     </header>

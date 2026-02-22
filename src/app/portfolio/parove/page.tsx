@@ -7,7 +7,7 @@ export default function ParovePage() {
     return (
         <PortfolioSection
             title="PÁROVÉ FOCENÍ"
-            handwrite="Láska"
+            handwrite="Soužítí"
             description={`Párové focení je o zachycení toho, co mezi Vámi opravdu je. Blízkost, něha, láska a vzájemné propojení. Bez nucených póz a křečovitých úsměvů. Jen vy dva, takoví, jací jste. Spolu.
 
 Během focení se snažím vytvořit uvolněnou atmosféru, aby bylo focení příjemným zážitkem pro oba. Procházíme se, povídáme si, smějeme se a já během těchto společných chvil zachycuji Vaše jedinečné momenty. 
