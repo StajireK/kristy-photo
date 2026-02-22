@@ -5,7 +5,7 @@ import {Autoplay, Navigation, Pagination} from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import heroImg from "../../public/gallery/gallery3.jpg";
+import heroImg from "../../public/danos-uvodni.jpg";
 import Image from "next/image";
 import Link from "next/link";
 import {CopyIcon, HeartIcon, MessageCircleIcon} from "lucide-react";
@@ -51,11 +51,11 @@ const reviews = [
 
 const instagramPosts = [
     {
-        href: "http://instagram.com/p/DP3C0GjDPPG/?img_index=1",
+        href: "https://www.instagram.com/p/DUx45RPCJrr/",
         img: "/insta/insta1.jpg",
-        alt: "Rodinné focení u řeky",
-        likes: 15,
-        comments: 1,
+        alt: "Rodinné focení u doma",
+        likes: 20,
+        comments: 0,
     },
     {
         href: "https://www.instagram.com/p/DQLuoGqDbCA/?img_index=1",
@@ -72,10 +72,10 @@ const instagramPosts = [
         comments: 8,
     },
     {
-        href: "https://www.instagram.com/p/DQlnM8Qjfgy/?img_index=1",
+        href: "https://www.instagram.com/p/DUIw2-rDafp/?img_index=1",
         img: "/insta/insta4.jpg",
-        alt: "Rodinné focení v lese",
-        likes: 20,
+        alt: "Fresh48 focení doma",
+        likes: 30,
         comments: 1,
     },
 ];
@@ -102,31 +102,24 @@ export default function HeroSlider() {
                 fill
                 priority
                 placeholder="blur"
+                quality={95}
                 className="object-cover md:object-[center_calc(50%+170px)]"
             />
 
             {/* tmavý overlay + text */}
             <div className="absolute inset-0 bg-black/30 flex items-end justify-center py-24">
                 <div className="z-10 px-4">
-                    <Image
-                        src="/kristy-photo-logo-text.png"
-                        alt="Kristy Photo Logo text"
-                        width={800}
-                        height={800}
-                        className="w-auto inline-block"
-                        priority
-                    />
-                    <p className="mt-4 text-4xl font-alumni text-white">
+                    <p className="handwrite-xl !text-white font-bold md:font-medium !opacity-100 relative z-0 text-4xl md:text-8xl mb-3 md:mb-16">
+                        Kristýna Pítrová
+                    </p>
+                    <p className="mt-4 text-2xl md:text-4xl font-alumni text-white">
                         RODINNÁ FOTOGRAFKA
                     </p>
-                    <Image
-                        src="/kristy-photo-logo-subtitle-text.png"
-                        alt="Kristy Photo Logo subtitle"
-                        width={400}
-                        height={400}
-                        className="w-auto inline-block"
-                        priority
-                    />
+                    <div className="flex justify-center mb-8">
+                        <p className="handwrite-xl !text-white !opacity-100 relative z-0 text-4xl md:text-6xl">
+                            Fotím kouzlo okamžiku
+                        </p>
+                    </div>
                 </div>
             </div>
 
@@ -154,6 +147,16 @@ export default function HeroSlider() {
 
         <section id="about-me" className="bg-gray-100">
             <div className="max-w-6xl mx-auto px-4 py-32">
+                <div className="flex justify-center mb-8">
+                    <header className="inline-flex flex-col items-center relative">
+                        <h2 className="!mb-0 absolute z-10 bottom-0 left-1/2 -translate-x-1/2 tracking-[0.15em] font-alumni uppercase text-2xl whitespace-nowrap">
+                            Kdo jsem a proč fotím
+                        </h2>
+                        <p className="handwrite-xl relative z-0 whitespace-nowrap text-8xl md:text-9xl">
+                            O mně
+                        </p>
+                    </header>
+                </div>
                 <div className="flex flex-col md:flex-row items-center gap-12">
                     {/* Textová karta */}
                     <div className="flex-[5] w-full mx-auto px-6 py-8 md:px-10 backdrop-blur-sm text-sm md:text-xl bg-white rounded-xl shadow-md text-gray-800">
@@ -204,7 +207,7 @@ export default function HeroSlider() {
             <Swiper
                 modules={[Autoplay]}
                 autoplay={{
-                    delay: 5000,
+                    delay: 2000,
                     disableOnInteraction: false,
                     waitForTransition: true,
                 }}
@@ -215,7 +218,7 @@ export default function HeroSlider() {
                         centeredSlides: true,
                     },
                     768: {
-                        slidesPerView: 3,
+                        slidesPerView: 5,
                         spaceBetween: 24,
                         centeredSlides: true,
                     },
@@ -244,9 +247,16 @@ export default function HeroSlider() {
         {/* Recenze */}
         <section className="bg-gray-100 py-8">
             <div className="max-w-xl mx-auto">
-                <h2 className="text-2xl md:text-3xl font-alumni uppercase text-center mb-8 tracking-[0.1em]">
-                    Recenze
-                </h2>
+                <div className="flex justify-center mb-8">
+                    <header className="inline-flex flex-col items-center relative">
+                        <h2 className="!mb-0 absolute z-10 bottom-0 left-1/2 -translate-x-1/2 tracking-[0.15em] font-alumni uppercase text-2xl whitespace-nowrap">
+                            Recenze
+                        </h2>
+                        <p className="handwrite-xl relative z-0 whitespace-nowrap text-8xl md:text-9xl">
+                            Říkají o mně
+                        </p>
+                    </header>
+                </div>
 
                 <Swiper
                     modules={[Pagination, Navigation]}
@@ -254,7 +264,7 @@ export default function HeroSlider() {
                     centeredSlides={true}
                     pagination={{ clickable: true }}
                     navigation={true}
-                    className="w-full reviews-swiper"
+                    className="w-full reviews-swiper mt-20"
                     grabCursor={true}
                     autoHeight={true}
                     spaceBetween={24}
@@ -278,10 +288,15 @@ export default function HeroSlider() {
         {/* Instagram sekce */}
         <section className="bg-gray-200 py-16">
             <div className="max-w-5xl mx-auto px-4">
-                <div className="flex items-center justify-between mb-6">
-                    <h2 className="text-2xl md:text-3xl font-alumni uppercase tracking-[0.2em]">
-                        Instagram
-                    </h2>
+                <div className="flex flex-col items-center mb-8 gap-2">
+                    <header className="inline-flex flex-col items-center relative">
+                        <h2 className="!mb-0 absolute z-10 bottom-0 left-1/2 -translate-x-1/2 tracking-[0.15em] font-alumni uppercase text-2xl whitespace-nowrap">
+                            Instagram
+                        </h2>
+                        <p className="handwrite-xl relative z-0 whitespace-nowrap text-8xl md:text-9xl">
+                            Sledujte mě
+                        </p>
+                    </header>
                     <a
                         href="https://www.instagram.com/kristypitrova.photo/"
                         target="_blank"

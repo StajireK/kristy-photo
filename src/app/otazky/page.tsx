@@ -9,10 +9,17 @@ export default function QuestionsPage() {
         <div className="bg-gray-100 min-h-screen py-16 px-4">
             <div className="max-w-3xl mx-auto">
 
-                {/* Nadpis */}
-                <h1 className="text-center text-4xl font-alumni tracking-[0.15em] mb-2">
-                    Často se mě ptáte
-                </h1>
+                {/* Nadpis ve stylu Portfolio – rukopisný dekor + kapitálky */}
+                <div className="flex justify-center mb-10">
+                    <header className="inline-flex flex-col items-center relative">
+                        <h1 className="!mb-0 absolute z-10 bottom-0 left-1/2 -translate-x-1/2 tracking-[0.15em] font-alumni uppercase text-2xl whitespace-nowrap">
+                            Často se mě ptáte
+                        </h1>
+                        <p className="handwrite-xl relative z-0 whitespace-nowrap text-8xl md:text-9xl">
+                            Otázky
+                        </p>
+                    </header>
+                </div>
 
                 <p className="text-center text-gray-700 mb-10">
                     Zde najdete odpovědi na dotazy, které od Vás často dostávám a co Vás nejčastěji
@@ -34,7 +41,7 @@ export default function QuestionsPage() {
                         <Link
                             href="/kontakt"
                             className={clsx(
-                                "w-fit inline-block text-sm font-serif px-4 py-2 rounded-full shadow transition",
+                                "w-fit inline-block text-sm   px-4 py-2 rounded-full shadow transition",
                                 "bg-[#F1E9D2] hover:bg-[#F1E9D2]/90"
                             )}
                         >

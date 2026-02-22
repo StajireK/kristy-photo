@@ -5,16 +5,24 @@ export default function HomePage() {
         <>
             <section className="bg-gray-100 py-16">
                 <div className="max-w-5xl mx-auto px-4">
-                    <h1 className="text-3xl md:text-4xl font-alumni tracking-[0.2em] text-center mb-8">
-                        Ceník focení
-                    </h1>
+                    {/* Nadpis ve stylu Portfolio – rukopisný dekor + kapitálky */}
+                    <div className="flex justify-center mb-10">
+                        <header className="inline-flex flex-col items-center relative">
+                            <h1 className="!mb-0 absolute z-10 bottom-0 left-1/2 -translate-x-1/2 tracking-[0.15em]  uppercase text-2xl whitespace-nowrap">
+                                Ceník focení
+                            </h1>
+                            <p className="handwrite-xl relative z-0 whitespace-nowrap text-8xl md:text-9xl">
+                                Ceník
+                            </p>
+                        </header>
+                    </div>
 
                     {/* 3 balíčky */}
                     <div className="grid gap-8 mb-8 md:grid-cols-2">
                         {/* STANDARD – zvýrazněný */}
                         <div className="bg-white rounded-2xl shadow-lg p-6 border border-primary/30 relative flex flex-col">
 
-                            <h2 className="mt-2 text-xl font-alumni uppercase tracking-[0.15em] mb-2 text-center">
+                            <h2 className="mt-2 text-xl  uppercase tracking-[0.15em] mb-2 text-center">
                                 BALÍČEK PRO RODINY, PÁRY, TĚHOTENSKÉ FOCENÍ
                             </h2>
                             <p className="text-2xl font-semibold text-primary mb-1 text-center">
@@ -42,7 +50,7 @@ export default function HomePage() {
 
                         {/* PREMIUM */}
                         <div className="bg-white rounded-2xl shadow-md p-6 flex flex-col">
-                            <h2 className="text-xl font-alumni uppercase tracking-[0.15em] mb-2 text-center">
+                            <h2 className="text-xl  uppercase tracking-[0.15em] mb-2 text-center">
                                 NEWBORN A FRESH48 BALÍČEK
                             </h2>
                             <p className="text-2xl font-semibold text-primary mb-8 text-center">
@@ -69,7 +77,7 @@ export default function HomePage() {
                     </div>
                         {/* MATERNITY */}
                         <div className="bg-white rounded-2xl shadow-md p-6 flex flex-col">
-                            <h2 className="text-xl font-alumni uppercase tracking-[0.15em] mb-2 text-center">
+                            <h2 className="text-xl  uppercase tracking-[0.15em] mb-2 text-center">
                                 MATERNITY BALÍČEK
                             </h2>
                             <p className="text-2xl font-semibold text-primary mb-8 text-center">
@@ -107,7 +115,7 @@ export default function HomePage() {
 
                     {/* Příplatky */}
                     <div className="mt-12 bg-white rounded-2xl shadow-md p-6 md:p-8">
-                        <h2 className="text-xl font-alumni uppercase tracking-[0.15em] mb-4 text-center md:text-left">
+                        <h2 className="text-xl  uppercase tracking-[0.15em] mb-4 text-center md:text-left">
                             Příplatky
                         </h2>
 

@@ -1,12 +1,8 @@
 import "./globals.css";
-import { Nunito, Dancing_Script } from "next/font/google";
+import { Dancing_Script, Quicksand } from "next/font/google";
 import type { Metadata } from "next";
 import Header from "./components/Header";
 
-const nunito = Nunito({
-    subsets: ["latin"],
-    weight: ["400", "700"],
-});
 
 const dancingScript = Dancing_Script({
     subsets: ["latin"],
@@ -14,6 +10,14 @@ const dancingScript = Dancing_Script({
     display: "swap",
     variable: "--font-cursive",
 });
+
+const quicksand = Quicksand({
+    subsets: ["latin"],
+    weight: ["400", "500", "600", "700"],
+    display: "swap",
+    variable: "--font-quicksand",
+});
+
 
 const siteUrl = "https://www.kristypitrova.photo/";
 const ogImage = `${siteUrl}/og-image.png`;
@@ -64,8 +68,8 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="cs" className={`${nunito.className} ${dancingScript.variable}`}>
-        <body className="bg-bg text-text min-h-screen h-full">
+        <html lang="cs" className={`${dancingScript.variable} ${quicksand.variable}`}>
+        <body className={`${quicksand.className} bg-bg text-text min-h-screen h-full`}>
         <Header />
         <div className="flex-1 flex flex-col">
             <main className="flex-1">{children}</main>

@@ -165,4 +165,20 @@ a {
     }
 }
 
+@font-face {
+    font-family: "modernline";
+    src: url("/modernline.otf") format("opentype");
+    font-display: swap;
+}
+
+.handwrite-xl {
+    color: rgb(201 171 143);
+    font-family: "modernline", "Dancing Script", cursive;
+    line-height: 1.5;
+    opacity: .4;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
 

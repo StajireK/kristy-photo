@@ -6,10 +6,18 @@ import { Instagram, Facebook, Mail } from "lucide-react";
 export default function ContactPage() {
     return (
         <div className="bg-gray-100 min-h-screen py-16 px-4">
-            <div className="max-w-xl mx-auto bg-white rounded-3xl shadow-lg p-8 md:p-10">
-                <h1 className="text-center text-3xl md:text-4xl font-alumni tracking-[0.15em] mb-4">
-                    Kontaktujte mě
-                </h1>
+            <div className="max-w-xl mx-auto">
+                <div className="flex justify-center mb-6">
+                    <header className="inline-flex flex-col items-center relative">
+                        <h1 className="!mb-0 absolute z-10 bottom-0 left-1/2 -translate-x-1/2 tracking-[0.15em] font-alumni uppercase text-2xl whitespace-nowrap">
+                            Kontaktujte mě
+                        </h1>
+                        <p className="handwrite-xl relative z-0 whitespace-nowrap text-8xl md:text-9xl">
+                            Napište mi
+                        </p>
+                    </header>
+                </div>
+            <div className="bg-white rounded-3xl shadow-lg p-8 md:p-10">
 
                 <p className="text-center text-gray-700 mb-8">
                     Nejraději s Vámi budu v kontaktu přes{" "}
@@ -54,6 +62,7 @@ export default function ContactPage() {
                         </a>
                     </p>
                 </div>
+            </div>
             </div>
         </div>
     );

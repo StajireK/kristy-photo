@@ -3,6 +3,7 @@ import {
     Facebook,
     Instagram,
     MenuIcon,
+    ChevronDown,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -18,22 +19,33 @@ import {
 import { Button } from "@/components/ui/button";
 import clsx from "clsx";
 import { usePathname } from "next/navigation";
+import { useState, useRef } from "react";
+
+const portfolioLinks = [
+    { href: "/portfolio/newborn", label: "FRESH 48 & NEWBORN" },
+    { href: "/portfolio/rodinne", label: "RODINNÉ FOCENÍ" },
+    { href: "/portfolio/tehotenske", label: "TĚHOTENSKÉ FOCENÍ" },
+    { href: "/portfolio/parove", label: "PÁROVÉ FOCENÍ" },
+];
 
 export default function Header() {
-    const openContact = () => {
-        window.location.href = "/kontakt";
-    };
+    const openContact = () => { window.location.href = "/kontakt"; };
     const pathname = usePathname();
+    const [dropdownOpen, setDropdownOpen] = useState(false);
+    const [portfolioOpen, setPortfolioOpen] = useState(true);
+    const dropdownRef = useRef<HTMLDivElement>(null);
+
+    const isPortfolioActive = pathname.startsWith("/portfolio");
 
     const navLinkClass = (path: string) =>
         clsx(
-            "font-alumni text-sm hover:underline flex flex-col items-center",
+            " text-sm hover:underline flex flex-col items-center",
             pathname === path && "text-soft underline"
         );
 
     const navLinkMobileClass = (path: string) =>
         clsx(
-            "font-alumni text-sm hover:underline flex flex-row gap-2 items-center",
+            "text-sm hover:underline flex flex-row gap-2 items-center",
             pathname === path && "text-soft underline"
         );
 
@@ -45,9 +57,10 @@ export default function Header() {
                     <Image
                         src="/kristy-logo-no-bg.png"
                         alt="Kristy Photo Logo"
-                        width={120}
-                        height={60}
-                        className="w-auto"
+                        width={240}
+                        height={120}
+                        quality={100}
+                        className="w-[120px] h-auto"
                         priority
                     />
                 </Link>
@@ -61,9 +74,42 @@ export default function Header() {
                         CENÍK
                     </Link>
 
-                    <Link href="/portfolio" className={navLinkClass("/portfolio")}>
-                        PORTFOLIO
-                    </Link>
+                    {/* Portfolio dropdown */}
+                    <div
+                        className="relative"
+                        ref={dropdownRef}
+                        onMouseEnter={() => setDropdownOpen(true)}
+                        onMouseLeave={() => setDropdownOpen(false)}
+                    >
+                        <button
+                            className={clsx(
+                                "font-alumni text-sm hover:underline flex flex-row items-center gap-1",
+                                isPortfolioActive && "text-soft underline"
+                            )}
+                        >
+                            PORTFOLIO
+                            <ChevronDown size={12} className={clsx("transition-transform", dropdownOpen && "rotate-180")} />
+                        </button>
+                        {dropdownOpen && (
+                            <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 z-50">
+                                <div className="bg-white border border-gray-100 rounded-xl py-2 flex flex-col min-w-[220px]" style={{ boxShadow: "0 8px 40px 0 rgba(0,0,0,0.18)" }}>
+                                    {portfolioLinks.map((link) => (
+                                        <Link
+                                            key={link.href}
+                                            href={link.href}
+                                            onClick={() => setDropdownOpen(false)}
+                                            className={clsx(
+                                                "font-alumni text-sm px-5 py-2.5 hover:bg-gray-50 whitespace-nowrap tracking-[0.08em]",
+                                                pathname === link.href && "text-soft"
+                                            )}
+                                        >
+                                            {link.label}
+                                        </Link>
+                                    ))}
+                                </div>
+                            </div>
+                        )}
+                    </div>
 
                     <Link href="/otazky" className={navLinkClass("/otazky")}>
                         Q&A
@@ -148,14 +194,36 @@ export default function Header() {
                                         </Link>
                                     </DrawerClose>
 
-                                    <DrawerClose asChild>
-                                        <Link
-                                            href="/portfolio"
-                                            className={navLinkMobileClass("/portfolio")}
+                                    {/* Portfolio submenu v mobile */}
+                                    <div className="flex flex-col items-center w-full">
+                                        <button
+                                            className={clsx(
+                                                "font-alumni text-sm hover:underline flex flex-row gap-2 items-center",
+                                                isPortfolioActive && "text-soft underline"
+                                            )}
+                                            onClick={() => setPortfolioOpen((v) => !v)}
                                         >
                                             PORTFOLIO
-                                        </Link>
-                                    </DrawerClose>
+                                            <ChevronDown size={14} className={clsx("transition-transform", portfolioOpen && "rotate-180")} />
+                                        </button>
+                                        {portfolioOpen && (
+                                            <div className="flex flex-col items-center gap-2 mt-2 w-full">
+                                                {portfolioLinks.map((link) => (
+                                                    <DrawerClose key={link.href} asChild>
+                                                        <Link
+                                                            href={link.href}
+                                                            className={clsx(
+                                                                "font-alumni text-xs tracking-[0.08em] text-gray-500 hover:text-soft",
+                                                                pathname === link.href && "text-soft underline"
+                                                            )}
+                                                        >
+                                                            {link.label}
+                                                        </Link>
+                                                    </DrawerClose>
+                                                ))}
+                                            </div>
+                                        )}
+                                    </div>
 
                                     <DrawerClose asChild>
                                         <Link

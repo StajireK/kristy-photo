@@ -5,10 +5,16 @@ export default function TermsPage() {
         <div className="bg-gray-100 min-h-screen py-16 px-4">
             <div className="max-w-3xl mx-auto">
 
-                {/* Nadpis */}
-                <h1 className="text-center text-4xl font-alumni tracking-[0.15em] mb-2">
-                    Obchodní podmínky
-                </h1>
+                <div className="flex justify-center mb-4">
+                    <header className="inline-flex flex-col items-center relative">
+                        <h1 className="!mb-0 absolute z-10 bottom-0 left-1/2 -translate-x-1/2 tracking-[0.15em] font-alumni uppercase text-2xl whitespace-nowrap">
+                            Obchodní podmínky
+                        </h1>
+                        <p className="handwrite-xl relative z-0 whitespace-nowrap text-8xl md:text-9xl">
+                            Podmínky
+                        </p>
+                    </header>
+                </div>
 
                 <p className="text-center text-gray-700 mb-10 max-w-xl mx-auto">
                     Tyto obchodní podmínky upravují vztah mezi klientem a fotografem při sjednání fotografických služeb.
