@@ -8,7 +8,7 @@ import "swiper/css/navigation";
 import heroImg from "../../public/danos-uvodni.jpg";
 import Image from "next/image";
 import Link from "next/link";
-import {CopyIcon, HeartIcon, MessageCircleIcon} from "lucide-react";
+import {CopyIcon, HeartIcon, Instagram, MessageCircleIcon} from "lucide-react";
 
 
 const images = [
@@ -297,15 +297,16 @@ export default function HeroSlider() {
                             Sledujte mě
                         </p>
                     </header>
-                    <a
-                        href="https://www.instagram.com/kristypitrova.photo/"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="text-sm md:text-base underline underline-offset-4 text-primary"
-                    >
-                        @kristypitrova.photo
-                    </a>
                 </div>
+                <a
+                    href="https://www.instagram.com/kristypitrova.photo/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-sm md:text-base underline underline-offset-4 text-primary flex flex-row gap-2 justify-end p-4 cursor-pointer hover:opacity-70 transition-opacity"
+                >
+                    <Instagram className="cursor-pointer" />
+                    @kristypitrova.photo
+                </a>
 
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                     {instagramPosts.map((post, i) => (
