@@ -9,7 +9,7 @@ export default function ContactPage() {
             <div className="max-w-xl mx-auto">
                 <div className="flex justify-center mb-6">
                     <header className="inline-flex flex-col items-center relative">
-                        <h1 className="!mb-0 absolute z-10 bottom-0 left-1/2 -translate-x-1/2 tracking-[0.15em] font-alumni uppercase text-2xl whitespace-nowrap">
+                        <h1 className="!mb-0 absolute z-10 bottom-0 left-1/2 -translate-x-1/2 tracking-[0.15em] uppercase text-2xl whitespace-nowrap font-semibold font-playfair">
                             Kontaktujte mě
                         </h1>
                         <p className="handwrite-xl relative z-0 whitespace-nowrap text-6xl md:text-9xl">

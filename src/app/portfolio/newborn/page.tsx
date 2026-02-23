@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import PortfolioSection from "../PortfolioSection";
 
-export const metadata: Metadata = { title: "Fresh 48 & Newborn" };
+export const metadata: Metadata = { title: "Fresh48 A Newborn" };
 
 export default function NewbornPage() {
     return (
         <PortfolioSection
-            title="FRESH 48 & NEWBORN"
-            handwrite="Zrození žívota"
+            title="FRESH48 A NEWBORN"
+            handwrite="Zrození"
             description={`Jednou budou tyto fotografie patřit mezi vzpomínky.
 Díky nim se alespoň na chvíli zastaví čas.
 Budou krásným a dojemným připomenutím toho,

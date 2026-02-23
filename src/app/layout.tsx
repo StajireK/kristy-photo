@@ -1,5 +1,5 @@
 import "./globals.css";
-import { Dancing_Script, Quicksand } from "next/font/google";
+import { Dancing_Script, Quicksand, Playfair_Display } from "next/font/google";
 import type { Metadata } from "next";
 import Header from "./components/Header";
 
@@ -16,6 +16,13 @@ const quicksand = Quicksand({
     weight: ["400", "500", "600", "700"],
     display: "swap",
     variable: "--font-quicksand",
+});
+
+const playfair = Playfair_Display({
+    subsets: ["latin"],
+    weight: ["400", "500", "600", "700"],
+    display: "swap",
+    variable: "--font-playfair",
 });
 
 
@@ -68,7 +75,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="cs" className={`${dancingScript.variable} ${quicksand.variable}`}>
+        <html lang="cs" className={`${dancingScript.variable} ${quicksand.variable} ${playfair.variable}`}>
         <body className={`${quicksand.className} bg-bg text-text min-h-screen h-full`}>
         <Header />
         <div className="flex-1 flex flex-col">

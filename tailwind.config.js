@@ -40,7 +40,7 @@ module.exports = {
       fontFamily: {
                 sans: ["var(--font-sans)", ...fontFamily.sans],
                     cursive: ['var(--font-cursive)'],
-
+        playfair: ['var(--font-playfair)', 'serif'],
 
         'dancing-script': ['Dancing Script', 'cursive'],
         'glory': ['Give You Glory', 'cursive'],

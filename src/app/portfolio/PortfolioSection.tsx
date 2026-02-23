@@ -67,11 +67,11 @@ export default function PortfolioSection({ title, handwrite, description, images
 
                     {/* Text – na mobilu nahoře, na desktopu vpravo */}
                     <div className="w-full md:w-1/2 flex flex-col items-center md:items-start order-1 md:order-2">
-                        <header className="inline-flex flex-col items-center relative mb-6">
-                            <h1 className="!mb-0 absolute z-10 bottom-0 left-1/2 -translate-x-1/2 tracking-[0.15em] font-alumni uppercase text-2xl whitespace-nowrap">
+                        <header className="inline-flex flex-col items-center md:items-start relative mb-6">
+                            <h1 className="!mb-0 absolute z-10 bottom-0 left-1/2 md:left-0 -translate-x-1/2 md:translate-x-0 tracking-[0.15em] uppercase text-2xl whitespace-nowrap font-semibold font-playfair">
                                 {title}
                             </h1>
-                            <p className="handwrite-xl relative z-0 whitespace-nowrap text-7xl md:text-6xl">
+                            <p className="handwrite-xl relative z-0 whitespace-nowrap text-7xl leading-none">
                                 {handwrite}
                             </p>
                         </header>

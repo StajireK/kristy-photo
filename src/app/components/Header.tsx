@@ -22,7 +22,7 @@ import { usePathname } from "next/navigation";
 import { useState, useRef } from "react";
 
 const portfolioLinks = [
-    { href: "/portfolio/newborn", label: "FRESH 48 & NEWBORN" },
+    { href: "/portfolio/newborn", label: "FRESH48 A NEWBORN" },
     { href: "/portfolio/rodinne", label: "RODINNÉ FOCENÍ" },
     { href: "/portfolio/tehotenske", label: "TĚHOTENSKÉ FOCENÍ" },
     { href: "/portfolio/parove", label: "PÁROVÉ FOCENÍ" },
@@ -83,7 +83,7 @@ export default function Header() {
                     >
                         <button
                             className={clsx(
-                                "font-alumni text-sm hover:underline flex flex-row items-center gap-1",
+                                " text-sm hover:underline flex flex-row items-center gap-1",
                                 isPortfolioActive && "text-soft underline"
                             )}
                         >
@@ -99,7 +99,7 @@ export default function Header() {
                                             href={link.href}
                                             onClick={() => setDropdownOpen(false)}
                                             className={clsx(
-                                                "font-alumni text-sm px-5 py-2.5 hover:bg-gray-50 whitespace-nowrap tracking-[0.08em]",
+                                                " text-sm px-5 py-2.5 hover:bg-gray-50 whitespace-nowrap tracking-[0.08em]",
                                                 pathname === link.href && "text-soft"
                                             )}
                                         >
@@ -125,7 +125,7 @@ export default function Header() {
                         href="https://www.instagram.com/kristypitrova.photo/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="font-alumni text-sm hover:underline flex flex-col items-center"
+                        className=" text-sm hover:underline flex flex-col items-center"
                     >
                         <Instagram size={20} />
                         INSTAGRAM
@@ -134,7 +134,7 @@ export default function Header() {
                         href="https://www.facebook.com/profile.php?id=61579282733001"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="font-alumni text-sm hover:underline flex flex-col items-center"
+                        className=" text-sm hover:underline flex flex-col items-center"
                     >
                         <Facebook size={20} />
                         FACEBOOK
@@ -158,7 +158,7 @@ export default function Header() {
                         href="https://www.instagram.com/kristypitrova.photo/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="font-alumni text-sm hover:underline flex flex-col items-center"
+                        className=" text-sm hover:underline flex flex-col items-center"
                     >
                         <Instagram size={20} />
                     </a>
@@ -166,7 +166,7 @@ export default function Header() {
                         href="https://www.facebook.com/profile.php?id=61579282733001"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="font-alumni text-sm hover:underline flex flex-col items-center"
+                        className=" text-sm hover:underline flex flex-col items-center"
                     >
                         <Facebook size={20} />
                     </a>
@@ -198,7 +198,7 @@ export default function Header() {
                                     <div className="flex flex-col items-center w-full">
                                         <button
                                             className={clsx(
-                                                "font-alumni text-sm hover:underline flex flex-row gap-2 items-center",
+                                                " text-sm hover:underline flex flex-row gap-2 items-center",
                                                 isPortfolioActive && "text-soft underline"
                                             )}
                                             onClick={() => setPortfolioOpen((v) => !v)}
@@ -213,7 +213,7 @@ export default function Header() {
                                                         <Link
                                                             href={link.href}
                                                             className={clsx(
-                                                                "font-alumni text-xs tracking-[0.08em] text-gray-500 hover:text-soft",
+                                                                " text-xs tracking-[0.08em] text-gray-500 hover:text-soft",
                                                                 pathname === link.href && "text-soft underline"
                                                             )}
                                                         >
@@ -250,7 +250,7 @@ export default function Header() {
                                             href="https://www.instagram.com/kristypitrova.photo/"
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="font-alumni text-sm hover:underline flex flex-row gap-2 items-center"
+                                            className=" text-sm hover:underline flex flex-row gap-2 items-center"
                                         >
                                             <Instagram size={20} />
                                             INSTAGRAM
@@ -262,7 +262,7 @@ export default function Header() {
                                             href="https://www.facebook.com/tynka.jaluvkova"
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="font-alumni text-sm hover:underline flex flex-row gap-2 items-center"
+                                            className=" text-sm hover:underline flex flex-row gap-2 items-center"
                                         >
                                             <Facebook size={20} />
                                             FACEBOOK
@@ -275,7 +275,7 @@ export default function Header() {
                                     <Button
                                         onClick={openContact}
                                         className={clsx(
-                                            "w-full font-alumni text-sm mb-2",
+                                            "w-full  text-sm mb-2",
                                             pathname === "/kontakt" && "bg-primary/80 text-white"
                                         )}
                                     >
@@ -285,7 +285,7 @@ export default function Header() {
 
                                 <DrawerClose asChild>
                                     <Button
-                                        className="w-full font-alumni text-sm"
+                                        className="w-full  text-sm"
                                         variant="outline"
                                     >
                                         ZAVŘÍT

@@ -112,7 +112,7 @@ export default function HeroSlider() {
                     <p className="handwrite-xl !text-white font-bold md:font-medium !opacity-100 relative z-0 text-4xl md:text-8xl mb-3 md:mb-16">
                         Kristýna Pítrová
                     </p>
-                    <p className="mt-4 text-2xl md:text-4xl font-alumni text-white">
+                    <p className="mt-4 text-2xl md:text-4xl  text-white">
                         RODINNÁ FOTOGRAFKA
                     </p>
                     <div className="flex justify-center mb-8">
@@ -149,7 +149,7 @@ export default function HeroSlider() {
             <div className="max-w-6xl mx-auto px-4 py-32">
                 <div className="flex justify-center mb-8">
                     <header className="inline-flex flex-col items-center relative">
-                        <h2 className="!mb-0 absolute z-10 bottom-0 left-1/2 -translate-x-1/2 tracking-[0.15em] font-alumni uppercase text-2xl whitespace-nowrap">
+                        <h2 className="!mb-0 absolute z-10 bottom-0 left-1/2 -translate-x-1/2 tracking-[0.15em] uppercase text-2xl whitespace-nowrap font-semibold font-playfair">
                             Kdo jsem a proč fotím
                         </h2>
                         <p className="handwrite-xl relative z-0 whitespace-nowrap text-6xl md:text-9xl">
@@ -249,7 +249,7 @@ export default function HeroSlider() {
             <div className="max-w-xl mx-auto">
                 <div className="flex justify-center mb-8">
                     <header className="inline-flex flex-col items-center relative">
-                        <h2 className="!mb-0 absolute z-10 bottom-0 left-1/2 -translate-x-1/2 tracking-[0.15em] font-alumni uppercase text-2xl whitespace-nowrap">
+                        <h2 className="!mb-0 absolute z-10 bottom-0 left-1/2 -translate-x-1/2 tracking-[0.15em] uppercase text-2xl whitespace-nowrap font-semibold font-playfair">
                             Recenze
                         </h2>
                         <p className="handwrite-xl whitespace-nowrap relative z-0 text-6xl md:text-9xl">
@@ -290,7 +290,7 @@ export default function HeroSlider() {
             <div className="max-w-5xl mx-auto px-4">
                 <div className="flex flex-col items-center mb-8 gap-2">
                     <header className="inline-flex flex-col items-center relative">
-                        <h2 className="!mb-0 absolute z-10 bottom-0 left-1/2 -translate-x-1/2 tracking-[0.15em] font-alumni uppercase text-2xl whitespace-nowrap">
+                        <h2 className="!mb-0 absolute z-10 bottom-0 left-1/2 -translate-x-1/2 tracking-[0.15em] uppercase text-2xl whitespace-nowrap font-semibold font-playfair">
                             Instagram
                         </h2>
                         <p className="handwrite-xl relative z-0 whitespace-nowrap text-6xl md:text-9xl">
