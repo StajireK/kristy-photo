@@ -214,7 +214,7 @@ export default function HeroSlider() {
                 loop={true}
                 breakpoints={{
                     0: {
-                        slidesPerView: 1,
+                        slidesPerView: 3,
                         centeredSlides: true,
                     },
                     768: {
