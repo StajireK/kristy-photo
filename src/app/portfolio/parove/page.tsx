@@ -12,7 +12,7 @@ export default function ParovePage() {
 
 Během focení se snažím vytvořit uvolněnou atmosféru, aby bylo focení příjemným zážitkem pro oba. Procházíme se, povídáme si, smějeme se a já během těchto společných chvil zachycuji Vaše jedinečné momenty. 
 
-Držím v ruce fotoaparát a skrz něj vidím Vás. Tu opravdovou lásku. Stačí jeden pohled, jeden úsměv, jedno pohlazení po tváři a já cítím, jak Vám na sebe záleží.
+Držím v ruce fotoaparát a skrz něj vidím Vás. Tu opravdovou lásku. Stačí jeden pohled, jeden úsměv, jedno pohlazení po tváři a já cítím, jak Vám na sobě záleží.
 
 Ať už slavíte výročí, zásnuby  nebo si prostě chcete jen uchovat společný čas – jsem tu pro Vás. Děkuji, že mi dovolujete být u toho 🤍`}
             images={[

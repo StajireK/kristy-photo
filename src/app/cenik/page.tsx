@@ -124,12 +124,6 @@ export default function HomePage() {
                                 <span>Extra fotografie nad rámec balíčku</span>
                                 <span className="font-semibold text-primary">180 Kč / ks</span>
                             </li>
-                            <li className="flex flex-wrap justify-between gap-2">
-                                <span>Doprava do 20 km z Kopřivnice je zdarma, nad 20 km počítám</span>
-                                <span className="font-semibold text-primary">
-                  + 10 Kč / km
-                </span>
-                            </li>
                         </ul>
 
                         <p className="mt-4 text-xs text-gray-500 italic">
