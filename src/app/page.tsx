@@ -5,7 +5,7 @@ import {Autoplay, Navigation, Pagination} from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import heroImg from "../../public/danos-uvodni.jpg";
+import heroImg from "../../public/stepanek-uvodni.jpg";
 import Image from "next/image";
 import Link from "next/link";
 import {CopyIcon, HeartIcon, Instagram, MessageCircleIcon} from "lucide-react";

@@ -100,7 +100,7 @@ export default function TermsPage() {
                         <h2 className="font-semibold text-lg mb-2">6. Výběr fotografií</h2>
                         <p className="text-gray-700 leading-relaxed">
                             Náhledy jsou zasílány online formou galerie.
-                            Maximální doba pro výběr fotografií je 5 týdnů. Po jejím uplynutí provede výběr fotograf sám.
+                            Maximální doba pro výběr fotografií je 30 dní. Po jejím uplynutí provede výběr fotograf sám.
                             <br /><br />
                             Minimální počet fotografií k odběru je dán cenovým balíčkem.
                             Další fotografie nad rámec balíčku jsou zpoplatněny dle ceníku.
@@ -145,7 +145,7 @@ export default function TermsPage() {
                             Fotografie jsou předávány elektronicky, formou odkazu ke stažení z online galerie.
                             Klient je povinen fotografie uložit a zálohovat.
                             <br /><br />
-                            Náhledy k výběru – do 1 týdne od focení.
+                            Náhledy k výběru – do 14 dnů od focení.
                             Finální fotografie – do 4 týdnů od výběru.
                             <br />
                             V případě nemoci nebo dovolené může být termín prodloužen.

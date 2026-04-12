@@ -102,8 +102,7 @@ export default function QuestionsPage() {
                         Nejraději fotím venku v přírodě nebo u Vás doma. Několik lokalit venku mám
                         vytipovaných a jsou mé oblíbené, takže Vám je ráda doporučím. A nebo nechám
                         výběr na Vás, pokud máte své oblíbené, speciální místo, na které byste mě rádi
-                        vzali. Nejčastěji fotím v okolí Kopřivnice. Doprava do 20 km z Kopřivnice je
-                        zdarma, nad 20 km počítám 10 Kč/km.
+                        vzali. Nejčastěji fotím v okolí Kopřivnice.
                     </p>
                 </div>
 
@@ -137,7 +136,7 @@ export default function QuestionsPage() {
                         Kdy a jak dostaneme fotografie?
                     </h3>
                     <p className="text-gray-700 leading-relaxed whitespace-pre-line">
-                        Po nafocení fotografií Vám posílám do týdne online náhledovou galerii, ze které
+                        Po nafocení fotografií Vám posílám do 14 dnů online náhledovou galerii, ze které
                         si sami vybíráte fotografie k finální úpravě. Jakmile fotografie vyberete a
                         zaplatíte, obdržíte finální fotografie v plném rozlišení do 4 týdnů (pokud Vás
                         předem neinformuji jinak). Hotové fotografie Vám zasílám skrze odkaz na online
