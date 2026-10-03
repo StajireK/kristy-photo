@@ -35,13 +35,13 @@ export const metadata: Metadata = {
         default: "Kristy Pítrová - Photo",
         template: "%s | Kristy Pítrová - Photo\"",
     },
-    description: "Rodinná fotografka - Fotím kouzlo okamžíku",
+    description: "Rodinná fotografka - Fotím očima fotografky a srdcem porodní asistentky.",
 
     openGraph: {
         type: "website",
         url: siteUrl,
         title: "Kristy Pítrova - Photo",
-        description: "Rodinná fotografka - Fotím kouzlo okamžíku",
+        description: "Rodinná fotografka - Fotím očima fotografky a srdcem porodní asistentky.",
         images: [
             {
                 url: ogImage,
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     twitter: {
         card: "summary_large_image",
         title: "Kristy Pítrová - Photo",
-        description: "Rodinná fotografka - Fotím kouzlo okamžíku",
+        description: "Rodinná fotografka - Fotím očima fotografky a srdcem porodní asistentky.",
         images: [ogImage],
     },
 
